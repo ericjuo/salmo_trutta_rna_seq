@@ -1,0 +1,9 @@
+# Ignore SRA files downloaded from GEO
+*.sra
+
+# Ignore sequencing files
+*.fastq
+*.bam
+*.sam
+
+
