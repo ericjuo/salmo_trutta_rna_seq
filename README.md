@@ -1,6 +1,6 @@
 # Rerun de novo RNA-Seq assembly
 ## Initiative
-This project is to reproduce the resutls of brown trout RNA-Seq published by Uren Webster et al. in 2013.
+This project is to reproduce the results of brown trout RNA-Seq published by Uren Webster et al. in 2013.
 
 Publication:
 Uren Webster, T. M., Bury, N., van Aerle, R., & Santos, E. M. (2013). Global transcriptome profiling reveals molecular mechanisms of metal tolerance in a chronically exposed wild population of brown trout. Environmental science & technology, 47(15), 8869–8877. https://doi.org/10.1021/es401380p  
@@ -13,15 +13,15 @@ https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45637
 Steps to download raw reads were documented [here](data/01_raw/README.md).
 
 ## Analysis outline
--   Remove adapter sequences
--   Filter out sequences that did not meet the quality threshold
--   Remove seuqences less than 30 bp
--   Pool paried reads of the adult tissues and embryo
--   De novo assemble using Velvet (version 1.2.08) and Oases by kmers
--   Annotate transcripts using Blastn and Blastx and fish and mammalian nt and protein databases with a cut off e-value < 1E-15.
--   Analyse gene expression using RSEM with `--no_polyA` parameter and default settings.
--   Statistical analysis differential expression using edgeR with a cutoff FDR <0.1.
--   Draw differential expressed genes using VennDiagram in R, Bioconductor.
+- [x]Remove adapter sequences (Base on FASTQC reports, no adapter contamination was found)  
+- [] Filter out sequences that did not meet the quality threshold  
+- [] Remove seuqences less than 30 bp  
+- [] Pool paried reads of the adult tissues and embryo  
+- [] De novo assemble using Velvet (version 1.2.08) and Oases by kmers  
+- [] Annotate transcripts using Blastn and Blastx and fish and mammalian nt and protein databases with a cut off e-value < 1E-15.  
+- [] Analyse gene expression using RSEM with `--no_polyA` parameter and default settings.  
+- [] Statistical analysis differential expression using edgeR with a cutoff FDR <0.1.  
+- [] Draw differential expressed genes using VennDiagram in R, Bioconductor.  
 
 ##  Analysis
 -   Metadata analysis: [[Link](notebooks/metadata_analysis.ipynb)]
