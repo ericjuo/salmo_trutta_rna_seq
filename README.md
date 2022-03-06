@@ -10,7 +10,7 @@ Uren Webster, T. M., Bury, N., van Aerle, R., & Santos, E. M. (2013). Global tra
 GSE45637 dataset downloaded from GEO website:
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45637
 
-Steps to download raw reads were documented [here](data/01_raw/README.md).
+Steps to download raw reads were documented [here](notebooks/obtain_raw_reads_from_GEO.md).
 
 ## Analysis outline
 - [x] Remove adapter sequences (Base on FASTQC reports, no adapter contamination was found)  
