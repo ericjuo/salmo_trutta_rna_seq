@@ -103,5 +103,61 @@ spots read      : 3,855,726
 reads read      : 7,711,452
 reads written   : 7,711,452
 ```
+##  Download metadata of raw reads 
+Metadata of raw reads was downloaded from https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA195452&o=acc_s%3Aa
 
+## Content in metadata
+
+Fields in the metadata:
+```
+$ head -n 1 SraRunTable.txt | tr "," "\n"
+Run
+adaptor_sequence
+Assay Type
+AvgSpotLen
+Bases
+BioProject
+BioSample
+Bytes
+Center Name
+Consent
+DATASTORE filetype
+DATASTORE provider
+DATASTORE region
+Developmental_Stage
+Experiment
+GEO_Accession (exp)
+Instrument
+LibraryLayout
+LibrarySelection
+LibrarySource
+Organism
+Platform
+ReleaseDate
+river
+Sample Name
+source_name
+SRA Study
+tissue
+treatment
+```
+Tissue & Treatment
+
+In IPython:
+```
+In [1]: import pandas as pd
+In [2]: meta = pd.read_csv("SraRunTable.txt")
+
+In [3]: meta[["Run", "tissue", "treatment"]]
+Out[3]: 
+         Run                 tissue               treatment
+0  SRR799769                   gill  chronic metal exposure
+1  SRR799770  stomach and intestine  chronic metal exposure
+2  SRR799771           trunk kidney  chronic metal exposure
+3  SRR799772                  liver  chronic metal exposure
+4  SRR799773                   gill                 control
+5  SRR799774  stomach and intestine                 control
+6  SRR799775           trunk kidney                 control
+7  SRR799776                  liver                 control
+```
 
