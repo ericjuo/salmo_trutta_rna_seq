@@ -6,4 +6,8 @@
 *.bam
 *.sam
 
+# Ignore credentials
+LICENSE
 
+# Ignore trimmomatic tools
+Trimmomatic-0.39/
