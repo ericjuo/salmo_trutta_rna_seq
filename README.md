@@ -43,3 +43,11 @@ SRR799775_2: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/s
 SRR799776_1: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799776_1_fastqc.html)]  
 SRR799776_2: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799776_2_fastqc.html)]  
 -   According to the [Hansen's article](https://academic.oup.com/nar/article/38/12/e131/2409775), biased nucleic acid content is common for RNA-Seq dataset as it is stemmed from hexamer priming or fragmentation using transposases. But these bised sequences do not affect downstream analysis like de novo assembly or mapping to reference genome. So I will not trim the first 12 bases of the reads as stated in the Uren Webster's article.
+- Quality trimming using Trimmomatic
+SRR799770_1_paired_trimmomatic: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799770_1_paired_trimmomatic_fastqc.html)]
+
+- Quality trimming using sickle
+SRR799770_1_sickle: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799770_1_sickle_fastqc.html)]
+
+- Before vs. After trimming
+![BvA](./data/02_intermediate/SRR799770_1_Before_After_trimmed.jpg)
