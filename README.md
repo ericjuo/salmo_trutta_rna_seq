@@ -51,3 +51,4 @@ SRR799770_1_sickle: [[Link](https://htmlpreview.github.io/?https://github.com/er
 
 - Before vs. After trimming  
 ![BvA](./data/02_intermediate/SRR799770_1_Before_After_trimmed.jpg)
+- MultiQC report: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/multiqc_report_1.html)]
