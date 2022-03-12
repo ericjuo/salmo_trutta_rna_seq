@@ -11,3 +11,10 @@ LICENSE
 
 # Ignore trimmomatic tools
 Trimmomatic-0.39/
+
+# ignore log giles
+data/02_intermediate/*.txt
+
+# Ignore zip
+*zip
+
