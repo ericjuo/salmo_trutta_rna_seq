@@ -31,7 +31,7 @@ rm Trimmomatic-0.39.zip
 ## Quality trimming
 fastq files were trimmed by trimmomatic:
 ```
-$ java -jar  Trimmomatic-0.39/trimmomatic-0.39.jar PE -phred33 -trimlog SRR799770_log.txt SRR799770_1.fastq  SRR799770_2.fastq SRR799770_1_paired_trimmomatic.fastq SRR799770_1_unpaired_trimmomatic.fastq SRR799770_2_paired_trimmomatic.fastq SRR799770_2_unpaired_trimmomatic.fastq ILLUMINACLIP:Trimmomatic-0.39/adapters/TruSeq2-PE.fa:2:30:10 SLIDINGWINDOW:4:20 MINLEN:35 &
+$ java -jar  ~/bin/Trimmomatic-0.39/trimmomatic-0.39.jar PE -phred33 -trimlog SRR799770_log.txt SRR799770_1.fastq  SRR799770_2.fastq SRR799770_1_paired_trimmomatic.fastq SRR799770_1_unpaired_trimmomatic.fastq SRR799770_2_paired_trimmomatic.fastq SRR799770_2_unpaired_trimmomatic.fastq ILLUMINACLIP:/home/ericjuo/bin/Trimmomatic-0.39/adapters/TruSeq2-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:20 MINLEN:35 &
 TrimmomaticPE: Started with arguments:
  SRR799770_1.fastq SRR799770_2.fastq SRR799770_1_paired_trimmomatic.fastq SRR799770_2_paired_trimmomatic.fastq SRR799770_1_unpaired_trimmomatic.fastq SRR799770_2_unpaired_trimmomatic.fastq ILLUMINACLIP:Trimmomatic-0.39/adapters/TruSeq2-PE.fa:2:30:10 SLIDINGWINDOW:4:20 MINLEN:35
 Multiple cores found: Using 4 threads
