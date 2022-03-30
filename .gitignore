@@ -3,6 +3,7 @@
 
 # Ignore sequencing files
 *.fastq
+*.fastq.gz
 *.bam
 *.sam
 
