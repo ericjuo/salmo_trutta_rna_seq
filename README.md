@@ -14,8 +14,8 @@ Steps to download raw reads were documented [here](notebooks/obtain_raw_reads_fr
 
 ## Analysis outline
 - [x] Remove adapter sequences (Base on FASTQC reports, no adapter contamination was found)  
-- [ ] Filter out sequences that did not meet the quality threshold  
-- [ ] Remove seuqences less than 30 bp  
+- [x] Filter out sequences that did not meet the quality threshold  
+- [x] Remove seuqences less than 35 bp  
 - [ ] Pool paried reads of the adult tissues and embryo  
 - [ ] De novo assemble using Velvet (version 1.2.08) and Oases by kmers  
 - [ ] Annotate transcripts using Blastn and Blastx and fish and mammalian nt and protein databases with a cut off e-value < 1E-15.  
@@ -52,3 +52,6 @@ SRR799770_1_sickle: [[Link](https://htmlpreview.github.io/?https://github.com/er
 - Before vs. After trimming  
 ![BvA](./data/02_intermediate/SRR799770_1_Before_After_trimmed.jpg)
 - MultiQC report: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/multiqc_report_1.html)]
+
+- Fasq_screen analysis showed that reads were contaminated with mammalian genome
+![Contamination](./data/02_intermediate/SRR799769_1_paired_trimmomatic_screen.png)

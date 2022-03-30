@@ -19,7 +19,8 @@ fastq_screen requires configuration before use, the configuration is in the foll
 ```
 /home/ericjuo/bin/FastQ-Screen-0.15.2/fastq_screen.conf
 ```
-In the configuration file, I edited the path of bowtie2 executable and databases (Human, Mouse).
+In the configuration file, I edited the path of bowtie2 executable and databases (Human, Mouse, and E coli).
+
 The Human genome was downloaded from ensembl, and indexed using bowite2.
 Human genome: http://ftp.ensembl.org/pub/release-105/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz 
 bowtie2 parameters:
@@ -32,4 +33,17 @@ Mouse genome: https://genome-idx.s3.amazonaws.com/bt/GRCm39.zip
 Genome was downloaded using wget:
 ```
 wget https://genome-idx.s3.amazonaws.com/bt/GRCm39.zip
+```
+
+The E coli genome was downloaded from EMBL, and indexed using bowtie2.
+E coli genome: https://www.ebi.ac.uk/ena/browser/api/fasta/U00096.2?download=true
+bowtie2 parameters:
+```
+bowtie2-build U00096.2.fasta ecoli
+```
+
+## fastq_screen analysis
+Trimmomatic_trimmed files were subjected to fastq_screen using ptyhon code:
+```
+ptyhon ../../scripts/run_fastq_screen.py
 ```
