@@ -77,4 +77,4 @@ Quality report of sickle-trimmed reads from FastQC software: [[Link](https://htm
 - Trommatic-trimmed reads were searched against human, mouse and E. Coli genome using Fastq Screen to identify foreign species contamination.
 ![Contamination](./data/02_intermediate/SRR799769_1_paired_trimmomatic_screen.png)
 
-- Foreign species contamination can be removed by Kraken2 or Centrifuge software. However, both softwares require at least 30G RAM, and my desktop computer only has 16G RAM. Despite I think foreign species contamination should be removed before de novo assebmly, I can't perform it at this moment.
+- Foreign species contamination can be removed by Kraken2 or Centrifuge software. However, both softwares require at least 30G RAM, which totally beyond my desktop's RAM size (I only have 16G RAM) ([CCB website](http://ccb.jhu.edu/software/choosing-a-metagenomics-classifier/)). Despite I  really want to remove foreign species contamination de novo assebmly, I can't perform it at this moment.
