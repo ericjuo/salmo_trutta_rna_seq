@@ -16,6 +16,8 @@ Steps to download the whole dataset: [[Link](notebooks/obtain_raw_reads_from_GEO
 - [x] Remove adapter sequences  
 - [x] Trim bases which the Pred quality score is below 20
 - [x] Remove reads less than 35 bp  
+- [x] Remove foreign species contamination
+- [ ] Remove reads containing Ns
 - [ ] Pool paried reads of the adult tissues and embryo  
 - [ ] De novo assemble using Velvet (version 1.2.08) and Oases by kmers  
 - [ ] Annotate transcripts using Blastn and Blastx and fish and mammalian nt and protein databases with a cut off e-value < 1E-15.  
@@ -81,4 +83,14 @@ Steps to compare results of trimming softwares: [[Link](./notebooks/compare_qual
 Steps to perform FastQ Screen: [[Link](./notebooks/fastq_screen.md)]  
 ![Contamination](./data/02_intermediate/SRR799769_1_paired_trimmomatic_screen.png)  
 
-- Foreign species contamination can be removed by Kraken2 or Centrifuge software. However, both softwares require at least 30G RAM, which totally beyond my desktop's RAM size (I only have 16G RAM) ([CCB website](http://ccb.jhu.edu/software/choosing-a-metagenomics-classifier/)). Despite I  really want to remove foreign species contamination de novo assebmly, I can't perform it at this moment.
+- Foreign species contamination were removed by Kraken2 software. The result indicats there are about 2% human genome contaminated in the reads. Those unclassifed reads in the output of kraken software are the clean reads.  
+Steps to perfrom Kraken2 on the galaxy platform: [[Link](./notebooks/kraken2_in_galaxy.md)]
+    ```
+    97.62	2485187	2485187	U	0	unclassified
+    2.38	60713	13	R	1	root
+    2.38	60486	1039	R1	131567	  cellular organisms
+    2.15	54649	54649	S	9606	   Homo sapiens
+    ```
+
+
+- 
