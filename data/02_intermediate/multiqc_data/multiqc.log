@@ -1,0 +1,474 @@
+[2022-04-01 16:51:48,387] multiqc                                            [DEBUG  ]  This is MultiQC v1.12
+[2022-04-01 16:51:48,387] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/ericjuo/miniconda3/lib/python3.9/site-packages/multiqc_config.yaml
+[2022-04-01 16:51:48,387] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/ericjuo/.multiqc_config.yaml
+[2022-04-01 16:51:48,387] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2022-04-01 16:51:48,387] multiqc                                            [DEBUG  ]  Command used: /home/ericjuo/miniconda3/bin/multiqc . --ignore *unpaired_trimmomatic_fastqc.html --ignore *sickle_fastqc.html --ignore *_screen.html
+[2022-04-01 16:51:51,608] multiqc                                            [DEBUG  ]  Latest MultiQC version is v1.12
+[2022-04-01 16:51:51,609] multiqc                                            [DEBUG  ]  Command     : /home/ericjuo/miniconda3/bin/multiqc . --ignore *unpaired_trimmomatic_fastqc.html --ignore *sickle_fastqc.html --ignore *_screen.html
+[2022-04-01 16:51:51,609] multiqc                                            [DEBUG  ]  Working dir : /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate
+[2022-04-01 16:51:51,609] multiqc                                            [DEBUG  ]  Template    : default
+[2022-04-01 16:51:51,609] multiqc                                            [DEBUG  ]  Running Python 3.9.7 (default, Sep 16 2021, 13:09:58)  [GCC 7.5.0]
+[2022-04-01 16:51:51,609] multiqc                                            [DEBUG  ]  Ignoring files, directories and paths that match: *unpaired_trimmomatic_fastqc.html, *sickle_fastqc.html, *_screen.html
+[2022-04-01 16:51:51,610] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, ccs, ngsderive, purple, conpair, lima, peddy, somalier, methylQA, mosdepth, phantompeakqualtools, qualimap, preseq, quast, qorts, rna_seqc, rockhopper, rsem, rseqc, busco, bustools, goleft_indexcov, gffcompare, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, mirtop, sambamba, homer, hops, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, fgbio, dragen, dedup, pbmarkdup, damageprofiler, biobambam2, jcvi, mtnucratio, picard, vep, sentieon, prokka, qc3C, nanostat, samblaster, samtools, sexdeterrmine, eigenstratdatabasetools, bamtools, jellyfish, vcftools, longranger, stacks, varscan2, snippy, bbmap, bismark, biscuit, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, snpsplit, odgi, pangolin, kat, leehom, adapterRemoval, clipandmerge, cutadapt, flexbar, kaiju, kraken, malt, trimmomatic, sickle, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, pychopper, pycoqc, minionqc, multivcfanalyzer, clusterflow, checkqc, bcl2fastq, bclconvert, interop, ivar, flash, seqyclean, optitype, whatshap
+[2022-04-01 16:51:51,610] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmptqg69p1h
+[2022-04-01 16:51:51,666] multiqc                                            [INFO   ]  Search path : /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate
+[2022-04-01 16:51:51,682] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: README.md
+[2022-04-01 16:51:51,683] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: README.md
+[2022-04-01 16:51:51,686] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799770_2_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:51,690] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799772_2_fastqc.html
+[2022-04-01 16:51:51,690] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799772_2_fastqc.html
+[2022-04-01 16:51:51,691] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799772_2_fastqc.html
+[2022-04-01 16:51:51,691] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799772_2_fastqc.html
+[2022-04-01 16:51:51,691] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799772_2_fastqc.html
+[2022-04-01 16:51:51,691] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799772_2_fastqc.html
+[2022-04-01 16:51:51,691] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799772_2_fastqc.html
+[2022-04-01 16:51:51,691] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799772_2_fastqc.html
+[2022-04-01 16:51:51,691] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799772_2_fastqc.html
+[2022-04-01 16:51:51,691] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799772_2_fastqc.html
+[2022-04-01 16:51:51,708] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799772_2_fastqc.html
+[2022-04-01 16:51:51,709] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799774_1_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:51,710] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799772_1_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:51,710] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799775_1_sickle_fastqc.html
+[2022-04-01 16:51:51,710] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799771_1.fastq.gz
+[2022-04-01 16:51:51,710] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799774_2_sickle_fastqc.html
+[2022-04-01 16:51:51,711] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799771_1_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:51,712] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799770_2_fastqc.html
+[2022-04-01 16:51:51,713] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799770_2_fastqc.html
+[2022-04-01 16:51:51,713] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799770_2_fastqc.html
+[2022-04-01 16:51:51,713] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799770_2_fastqc.html
+[2022-04-01 16:51:51,713] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799770_2_fastqc.html
+[2022-04-01 16:51:51,713] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799770_2_fastqc.html
+[2022-04-01 16:51:51,713] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799770_2_fastqc.html
+[2022-04-01 16:51:51,713] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799770_2_fastqc.html
+[2022-04-01 16:51:51,713] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799770_2_fastqc.html
+[2022-04-01 16:51:51,713] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799770_2_fastqc.html
+[2022-04-01 16:51:51,729] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799770_2_fastqc.html
+[2022-04-01 16:51:51,730] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799773_1_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:51,730] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799769_2_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:51,731] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799770_2_sickle_fastqc.html
+[2022-04-01 16:51:51,732] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799771_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,732] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799771_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,733] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799771_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,733] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799771_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,733] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799771_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,733] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799771_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,733] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799771_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,733] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799771_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,733] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799771_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,733] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799771_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,762] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799771_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,766] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799775_1_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:51,768] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799776_2_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:51,769] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799776_2.fastq.gz
+[2022-04-01 16:51:51,772] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799770_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,772] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799770_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,772] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799770_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,773] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799770_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,773] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799770_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,773] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799770_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,773] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799770_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,773] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799770_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,773] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799770_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,773] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799770_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,804] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799770_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,806] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799774_1_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:51,806] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799775_1_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:51,807] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799771_2_fastqc.html
+[2022-04-01 16:51:51,807] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799771_2_fastqc.html
+[2022-04-01 16:51:51,807] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799771_2_fastqc.html
+[2022-04-01 16:51:51,808] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799771_2_fastqc.html
+[2022-04-01 16:51:51,808] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799771_2_fastqc.html
+[2022-04-01 16:51:51,808] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799771_2_fastqc.html
+[2022-04-01 16:51:51,808] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799771_2_fastqc.html
+[2022-04-01 16:51:51,808] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799771_2_fastqc.html
+[2022-04-01 16:51:51,808] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799771_2_fastqc.html
+[2022-04-01 16:51:51,808] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799771_2_fastqc.html
+[2022-04-01 16:51:51,822] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799771_2_fastqc.html
+[2022-04-01 16:51:51,823] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799770_1.fastq.gz
+[2022-04-01 16:51:51,824] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799774_1_fastqc.html
+[2022-04-01 16:51:51,825] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799774_1_fastqc.html
+[2022-04-01 16:51:51,825] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799774_1_fastqc.html
+[2022-04-01 16:51:51,825] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799774_1_fastqc.html
+[2022-04-01 16:51:51,825] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799774_1_fastqc.html
+[2022-04-01 16:51:51,825] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799774_1_fastqc.html
+[2022-04-01 16:51:51,825] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799774_1_fastqc.html
+[2022-04-01 16:51:51,825] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799774_1_fastqc.html
+[2022-04-01 16:51:51,825] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799774_1_fastqc.html
+[2022-04-01 16:51:51,825] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799774_1_fastqc.html
+[2022-04-01 16:51:51,840] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799774_1_fastqc.html
+[2022-04-01 16:51:51,841] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799776_2_paired_trimmomatic_screen.html
+[2022-04-01 16:51:51,841] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799775_1_paired_trimmomatic_screen.html
+[2022-04-01 16:51:51,841] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799773_2_sickle_fastqc.html
+[2022-04-01 16:51:51,841] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799776_2_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:51,842] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799772_2_sickle_fastqc.html
+[2022-04-01 16:51:51,843] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799775_2_sickle_fastqc.html
+[2022-04-01 16:51:51,843] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799770_2_paired_trimmomatic_screen.html
+[2022-04-01 16:51:51,843] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799770_2.fastq.gz
+[2022-04-01 16:51:51,843] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799773_1_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:51,843] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799774_1_paired_trimmomatic_screen.html
+[2022-04-01 16:51:51,845] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799772_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,845] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799772_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,845] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799772_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,846] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799772_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,846] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799772_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,846] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799772_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,846] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799772_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,846] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799772_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,846] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799772_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,846] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799772_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,873] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799772_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,875] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: multiqc_report_1.html
+[2022-04-01 16:51:51,877] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799774_2_fastqc.html
+[2022-04-01 16:51:51,877] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799774_2_fastqc.html
+[2022-04-01 16:51:51,877] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799774_2_fastqc.html
+[2022-04-01 16:51:51,878] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799774_2_fastqc.html
+[2022-04-01 16:51:51,878] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799774_2_fastqc.html
+[2022-04-01 16:51:51,878] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799774_2_fastqc.html
+[2022-04-01 16:51:51,878] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799774_2_fastqc.html
+[2022-04-01 16:51:51,878] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799774_2_fastqc.html
+[2022-04-01 16:51:51,878] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799774_2_fastqc.html
+[2022-04-01 16:51:51,878] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799774_2_fastqc.html
+[2022-04-01 16:51:51,895] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799774_2_fastqc.html
+[2022-04-01 16:51:51,897] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799775_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,898] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799775_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,898] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799775_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,898] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799775_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,898] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799775_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,898] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799775_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,898] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799775_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,898] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799775_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,898] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799775_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,898] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799775_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,926] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799775_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,928] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799769_2_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:51,928] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799772_2_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:51,929] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799773_1_fastqc.html
+[2022-04-01 16:51:51,929] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799773_1_fastqc.html
+[2022-04-01 16:51:51,929] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799773_1_fastqc.html
+[2022-04-01 16:51:51,929] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799773_1_fastqc.html
+[2022-04-01 16:51:51,929] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799773_1_fastqc.html
+[2022-04-01 16:51:51,929] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799773_1_fastqc.html
+[2022-04-01 16:51:51,929] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799773_1_fastqc.html
+[2022-04-01 16:51:51,930] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799773_1_fastqc.html
+[2022-04-01 16:51:51,930] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799773_1_fastqc.html
+[2022-04-01 16:51:51,930] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799773_1_fastqc.html
+[2022-04-01 16:51:51,943] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799773_1_fastqc.html
+[2022-04-01 16:51:51,946] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799769_2_fastqc.html
+[2022-04-01 16:51:51,946] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799769_2_fastqc.html
+[2022-04-01 16:51:51,946] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799769_2_fastqc.html
+[2022-04-01 16:51:51,947] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799769_2_fastqc.html
+[2022-04-01 16:51:51,947] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799769_2_fastqc.html
+[2022-04-01 16:51:51,947] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799769_2_fastqc.html
+[2022-04-01 16:51:51,947] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799769_2_fastqc.html
+[2022-04-01 16:51:51,947] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799769_2_fastqc.html
+[2022-04-01 16:51:51,947] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799769_2_fastqc.html
+[2022-04-01 16:51:51,947] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799769_2_fastqc.html
+[2022-04-01 16:51:51,961] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799769_2_fastqc.html
+[2022-04-01 16:51:51,962] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799769_1_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:51,963] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799771_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,964] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799771_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,964] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799771_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,964] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799771_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,964] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799771_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,964] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799771_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,964] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799771_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,964] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799771_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,964] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799771_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,964] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799771_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:51,996] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799771_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,000] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799775_2.fastq.gz
+[2022-04-01 16:51:52,001] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799772_2_paired_trimmomatic_screen.html
+[2022-04-01 16:51:52,002] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799776_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,003] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799776_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,003] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799776_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,003] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799776_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,003] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799776_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,003] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799776_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,003] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799776_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,003] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799776_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,003] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799776_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,003] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799776_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,031] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799776_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,033] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799771_1_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:52,033] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799771_1_sickle_fastqc.html
+[2022-04-01 16:51:52,033] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799773_2_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,033] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799774_2_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:52,035] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799771_2_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,035] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799772_1_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,035] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799773_1.fastq.gz
+[2022-04-01 16:51:52,036] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799773_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,036] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799773_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,036] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799773_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,037] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799773_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,037] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799773_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,037] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799773_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,037] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799773_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,037] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799773_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,037] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799773_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,037] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799773_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,063] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799773_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,065] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799774_1_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,066] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799769_1_sickle_fastqc.html
+[2022-04-01 16:51:52,066] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799769_1_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:52,066] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799776_1_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,066] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799769_2_paired_trimmomatic_screen.html
+[2022-04-01 16:51:52,066] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799774_2_paired_trimmomatic_screen.html
+[2022-04-01 16:51:52,066] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799769_2.fastq.gz
+[2022-04-01 16:51:52,066] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799773_1_sickle_fastqc.html
+[2022-04-01 16:51:52,066] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799774_1_sickle_fastqc.html
+[2022-04-01 16:51:52,066] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799776_1_paired_trimmomatic_screen.html
+[2022-04-01 16:51:52,066] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799769_1_paired_trimmomatic_screen.html
+[2022-04-01 16:51:52,067] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799769_2_sickle_fastqc.html
+[2022-04-01 16:51:52,068] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799774_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,069] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799774_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,069] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799774_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,069] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799774_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,069] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799774_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,069] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799774_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,069] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799774_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,069] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799774_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,069] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799774_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,069] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799774_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,101] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799774_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,103] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799775_2_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,103] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799771_1_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,103] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799774_2_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,104] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799772_1_fastqc.html
+[2022-04-01 16:51:52,104] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799772_1_fastqc.html
+[2022-04-01 16:51:52,105] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799772_1_fastqc.html
+[2022-04-01 16:51:52,105] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799772_1_fastqc.html
+[2022-04-01 16:51:52,105] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799772_1_fastqc.html
+[2022-04-01 16:51:52,105] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799772_1_fastqc.html
+[2022-04-01 16:51:52,105] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799772_1_fastqc.html
+[2022-04-01 16:51:52,105] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799772_1_fastqc.html
+[2022-04-01 16:51:52,105] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799772_1_fastqc.html
+[2022-04-01 16:51:52,105] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799772_1_fastqc.html
+[2022-04-01 16:51:52,119] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799772_1_fastqc.html
+[2022-04-01 16:51:52,120] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799771_2_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:52,121] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799772_1.fastq.gz
+[2022-04-01 16:51:52,121] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799770_1_paired_trimmomatic_screen.html
+[2022-04-01 16:51:52,121] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799776_1_sickle_fastqc.html
+[2022-04-01 16:51:52,121] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799772_2.fastq.gz
+[2022-04-01 16:51:52,122] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799775_1.fastq.gz
+[2022-04-01 16:51:52,122] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799775_1_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,124] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799775_1_fastqc.html
+[2022-04-01 16:51:52,125] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799775_1_fastqc.html
+[2022-04-01 16:51:52,125] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799775_1_fastqc.html
+[2022-04-01 16:51:52,125] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799775_1_fastqc.html
+[2022-04-01 16:51:52,125] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799775_1_fastqc.html
+[2022-04-01 16:51:52,125] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799775_1_fastqc.html
+[2022-04-01 16:51:52,125] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799775_1_fastqc.html
+[2022-04-01 16:51:52,125] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799775_1_fastqc.html
+[2022-04-01 16:51:52,125] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799775_1_fastqc.html
+[2022-04-01 16:51:52,125] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799775_1_fastqc.html
+[2022-04-01 16:51:52,139] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799775_1_fastqc.html
+[2022-04-01 16:51:52,140] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799769_1_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,141] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799769_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,142] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799769_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,142] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799769_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,142] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799769_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,142] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799769_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,142] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799769_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,142] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799769_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,142] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799769_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,142] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799769_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,142] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799769_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,168] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799769_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,171] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799775_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,171] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799775_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,171] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799775_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,172] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799775_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,172] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799775_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,172] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799775_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,172] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799775_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,172] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799775_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,172] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799775_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,172] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799775_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,204] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799775_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,206] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799775_2_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:52,207] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799773_2_fastqc.html
+[2022-04-01 16:51:52,208] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799773_2_fastqc.html
+[2022-04-01 16:51:52,208] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799773_2_fastqc.html
+[2022-04-01 16:51:52,208] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799773_2_fastqc.html
+[2022-04-01 16:51:52,208] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799773_2_fastqc.html
+[2022-04-01 16:51:52,208] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799773_2_fastqc.html
+[2022-04-01 16:51:52,208] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799773_2_fastqc.html
+[2022-04-01 16:51:52,208] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799773_2_fastqc.html
+[2022-04-01 16:51:52,208] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799773_2_fastqc.html
+[2022-04-01 16:51:52,208] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799773_2_fastqc.html
+[2022-04-01 16:51:52,223] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799773_2_fastqc.html
+[2022-04-01 16:51:52,224] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799775_2_fastqc.html
+[2022-04-01 16:51:52,225] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799775_2_fastqc.html
+[2022-04-01 16:51:52,225] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799775_2_fastqc.html
+[2022-04-01 16:51:52,225] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799775_2_fastqc.html
+[2022-04-01 16:51:52,225] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799775_2_fastqc.html
+[2022-04-01 16:51:52,225] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799775_2_fastqc.html
+[2022-04-01 16:51:52,225] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799775_2_fastqc.html
+[2022-04-01 16:51:52,225] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799775_2_fastqc.html
+[2022-04-01 16:51:52,225] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799775_2_fastqc.html
+[2022-04-01 16:51:52,225] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799775_2_fastqc.html
+[2022-04-01 16:51:52,239] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799775_2_fastqc.html
+[2022-04-01 16:51:52,240] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799775_2_paired_trimmomatic_screen.html
+[2022-04-01 16:51:52,240] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799771_2_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,240] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799775_2_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,240] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799773_2.fastq.gz
+[2022-04-01 16:51:52,240] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799774_1.fastq.gz
+[2022-04-01 16:51:52,241] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799770_1_fastqc.html
+[2022-04-01 16:51:52,242] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799770_1_fastqc.html
+[2022-04-01 16:51:52,242] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799770_1_fastqc.html
+[2022-04-01 16:51:52,242] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799770_1_fastqc.html
+[2022-04-01 16:51:52,242] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799770_1_fastqc.html
+[2022-04-01 16:51:52,242] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799770_1_fastqc.html
+[2022-04-01 16:51:52,242] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799770_1_fastqc.html
+[2022-04-01 16:51:52,242] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799770_1_fastqc.html
+[2022-04-01 16:51:52,242] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799770_1_fastqc.html
+[2022-04-01 16:51:52,242] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799770_1_fastqc.html
+[2022-04-01 16:51:52,256] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799770_1_fastqc.html
+[2022-04-01 16:51:52,257] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799770_1_sickle_fastqc.html
+[2022-04-01 16:51:52,257] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799769_2_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:52,258] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799769_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,258] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799769_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,258] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799769_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,259] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799769_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,259] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799769_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,259] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799769_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,259] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799769_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,259] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799769_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,259] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799769_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,259] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799769_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,290] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799769_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,294] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799776_2_fastqc.html
+[2022-04-01 16:51:52,294] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799776_2_fastqc.html
+[2022-04-01 16:51:52,294] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799776_2_fastqc.html
+[2022-04-01 16:51:52,295] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799776_2_fastqc.html
+[2022-04-01 16:51:52,295] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799776_2_fastqc.html
+[2022-04-01 16:51:52,295] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799776_2_fastqc.html
+[2022-04-01 16:51:52,295] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799776_2_fastqc.html
+[2022-04-01 16:51:52,295] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799776_2_fastqc.html
+[2022-04-01 16:51:52,295] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799776_2_fastqc.html
+[2022-04-01 16:51:52,295] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799776_2_fastqc.html
+[2022-04-01 16:51:52,310] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799776_2_fastqc.html
+[2022-04-01 16:51:52,312] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799770_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,312] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799770_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,312] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799770_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,313] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799770_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,313] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799770_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,313] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799770_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,313] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799770_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,313] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799770_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,313] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799770_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,313] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799770_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,340] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799770_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,342] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799773_1_paired_trimmomatic_screen.html
+[2022-04-01 16:51:52,342] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799771_1_paired_trimmomatic_screen.html
+[2022-04-01 16:51:52,342] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799772_1_paired_trimmomatic_screen.html
+[2022-04-01 16:51:52,342] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799773_2_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,342] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799770_2_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:52,342] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799770_1_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,342] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799769_1.fastq.gz
+[2022-04-01 16:51:52,344] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799771_1_fastqc.html
+[2022-04-01 16:51:52,344] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799771_1_fastqc.html
+[2022-04-01 16:51:52,344] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799771_1_fastqc.html
+[2022-04-01 16:51:52,344] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799771_1_fastqc.html
+[2022-04-01 16:51:52,344] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799771_1_fastqc.html
+[2022-04-01 16:51:52,344] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799771_1_fastqc.html
+[2022-04-01 16:51:52,344] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799771_1_fastqc.html
+[2022-04-01 16:51:52,344] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799771_1_fastqc.html
+[2022-04-01 16:51:52,344] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799771_1_fastqc.html
+[2022-04-01 16:51:52,344] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799771_1_fastqc.html
+[2022-04-01 16:51:52,358] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799771_1_fastqc.html
+[2022-04-01 16:51:52,359] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799776_1_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,359] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799770_2_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,360] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799776_1_fastqc.html
+[2022-04-01 16:51:52,360] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799776_1_fastqc.html
+[2022-04-01 16:51:52,360] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799776_1_fastqc.html
+[2022-04-01 16:51:52,361] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799776_1_fastqc.html
+[2022-04-01 16:51:52,361] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799776_1_fastqc.html
+[2022-04-01 16:51:52,361] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799776_1_fastqc.html
+[2022-04-01 16:51:52,361] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799776_1_fastqc.html
+[2022-04-01 16:51:52,361] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799776_1_fastqc.html
+[2022-04-01 16:51:52,361] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799776_1_fastqc.html
+[2022-04-01 16:51:52,361] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799776_1_fastqc.html
+[2022-04-01 16:51:52,374] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799776_1_fastqc.html
+[2022-04-01 16:51:52,375] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799774_2_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,376] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799772_2_unpaired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,378] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799772_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,378] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799772_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,379] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799772_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,379] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799772_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,379] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799772_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,379] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799772_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,379] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799772_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,379] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799772_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,379] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799772_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,379] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799772_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,411] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799772_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,413] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799773_2_paired_trimmomatic_screen.html
+[2022-04-01 16:51:52,416] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799774_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,416] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799774_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,416] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799774_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,416] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799774_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,417] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799774_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,417] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799774_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,417] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799774_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,417] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799774_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,417] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799774_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,417] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799774_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,443] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799774_2_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,445] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799770_1_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:52,445] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799772_1_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,445] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799776_2_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,445] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799772_2_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,445] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799776_1_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:52,448] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799773_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,448] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799773_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,448] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799773_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,448] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799773_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,449] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799773_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,449] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799773_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,449] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799773_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,449] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799773_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,449] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799773_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,449] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799773_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,475] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799773_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,476] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799771_2.fastq.gz
+[2022-04-01 16:51:52,477] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799772_1_sickle_fastqc.html
+[2022-04-01 16:51:52,478] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799771_2_paired_trimmomatic_screen.html
+[2022-04-01 16:51:52,478] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799771_2_sickle_fastqc.html
+[2022-04-01 16:51:52,478] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799770_1_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,480] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799769_1_fastqc.html
+[2022-04-01 16:51:52,480] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799769_1_fastqc.html
+[2022-04-01 16:51:52,480] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799769_1_fastqc.html
+[2022-04-01 16:51:52,480] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799769_1_fastqc.html
+[2022-04-01 16:51:52,480] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799769_1_fastqc.html
+[2022-04-01 16:51:52,480] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799769_1_fastqc.html
+[2022-04-01 16:51:52,480] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799769_1_fastqc.html
+[2022-04-01 16:51:52,480] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799769_1_fastqc.html
+[2022-04-01 16:51:52,480] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799769_1_fastqc.html
+[2022-04-01 16:51:52,480] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799769_1_fastqc.html
+[2022-04-01 16:51:52,498] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799769_1_fastqc.html
+[2022-04-01 16:51:52,498] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799776_1.fastq.gz
+[2022-04-01 16:51:52,499] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799773_1_paired_trimmomatic.fastq.gz
+[2022-04-01 16:51:52,499] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799774_2.fastq.gz
+[2022-04-01 16:51:52,502] multiqc                                            [DEBUG  ]  File ignored by ccs/v4 because it exceeded search pattern filesize limit: SRR799776_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,502] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR799776_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,502] multiqc                                            [DEBUG  ]  File ignored by lima/summary because it exceeded search pattern filesize limit: SRR799776_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,503] multiqc                                            [DEBUG  ]  File ignored by vep/vep_txt because it exceeded search pattern filesize limit: SRR799776_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,503] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR799776_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,503] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: SRR799776_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,503] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: SRR799776_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,503] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: SRR799776_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,503] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: SRR799776_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,503] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: SRR799776_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,531] multiqc                                            [DEBUG  ]  File ignored by nanostat because it exceeded search pattern filesize limit: SRR799776_1_paired_trimmomatic_fastqc.html
+[2022-04-01 16:51:52,533] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799773_2_unpaired_trimmomatic_screen.html
+[2022-04-01 16:51:52,533] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR799776_2_sickle_fastqc.html
+[2022-04-01 16:51:52,806] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.5.1
+[2022-04-01 16:51:52,817] multiqc.modules.fastq_screen.fastq_screen          [INFO   ]  Found 32 reports
+[2022-04-01 16:51:52,820] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.5.1
+[2022-04-01 16:51:52,837] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 16 reports
+[2022-04-01 16:51:52,962] multiqc                                            [INFO   ]  Compressing plot data
+[2022-04-01 16:51:53,062] multiqc                                            [INFO   ]  Report      : multiqc_report.html
+[2022-04-01 16:51:53,062] multiqc                                            [INFO   ]  Data        : multiqc_data
+[2022-04-01 16:51:53,062] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmptqg69p1h/multiqc_data' to '/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/multiqc_data'
+[2022-04-01 16:51:53,104] multiqc                                            [INFO   ]  MultiQC complete

@@ -75,7 +75,7 @@ Steps to perform sickle: [[Link](./notebooks/quality_trimming_using_sickle.md)]
 Steps to compare results of trimming softwares: [[Link](./notebooks/compare_quality_before_and_after_trimmed_using_qrqc.md)]  
 ![BvA](./data/02_intermediate/SRR799770_1_Before_After_trimmed.jpg)  
 
-- MultiQC report summarized the quality report of before and after trimming either using trimmomatic or sickle: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/multiqc_report_1.html)]
+- MultiQC report summarized the quality report of before and after trimming either using trimmomatic or sickle: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/multiqc_report.html)]
 
 - Trommatic-trimmed reads were searched against human, mouse and E. Coli genome using Fastq Screen to identify foreign species contamination.  
 Steps to perform FastQ Screen: [[Link](./notebooks/fastq_screen.md)]  
