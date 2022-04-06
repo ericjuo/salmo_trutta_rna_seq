@@ -17,9 +17,8 @@ Steps to download the whole dataset: [[Link](notebooks/obtain_raw_reads_from_GEO
 - [x] Trim bases which the Pred quality score is below 20
 - [x] Remove reads less than 35 bp  
 - [x] Remove foreign species contamination
-- [ ] Remove reads containing Ns
-- [ ] Pool paried reads of the adult tissues and embryo  
-- [ ] De novo assemble using Velvet (version 1.2.08) and Oases by kmers  
+- [x] Pool clean reads of different tissues
+- [ ] De novo assemble using Trinity
 - [ ] Annotate transcripts using Blastn and Blastx and fish and mammalian nt and protein databases with a cut off e-value < 1E-15.  
 - [ ] Analyse gene expression using RSEM with `--no_polyA` parameter and default settings.  
 - [ ] Statistical analysis differential expression using edgeR with a cutoff FDR <0.1.  
@@ -79,11 +78,11 @@ Steps to compare results of trimming softwares: [[Link](./notebooks/compare_qual
 
 - MultiQC report summarized the quality report of before and after trimming either using trimmomatic or sickle: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/multiqc_report.html)]
 
-- Trommatic-trimmed reads were searched against human, mouse and E. Coli genome using Fastq Screen to identify foreign species contamination.  
+- Trommatic-trimmed reads were searched against human, mouse and E. Coli genome using Fastq Screen to identify foreign species contamination. The result showed that the read set contains some mammalian contaminants.  
 Steps to perform FastQ Screen: [[Link](./notebooks/fastq_screen.md)]  
 ![Contamination](./data/02_intermediate/SRR799769_1_paired_trimmomatic_screen.png)  
 
-- Foreign species contamination were removed by Kraken2 software. The result indicats there are about 2% human genome contaminated in the reads. Those unclassifed reads in the output of kraken software are the clean reads.  
+- Foreign species contamination were removed by Kraken2 software. The report indicats there are about 2% human genome contaminated in the reads. Since brown traut genome is not search against, those unclassifed reads are clean reads without foreign species contaminants, and they are the target output.  
 Steps to perfrom Kraken2 on the galaxy platform: [[Link](./notebooks/kraken2_in_galaxy.md)]
     ```
     97.62	2485187	2485187	U	0	unclassified
@@ -92,5 +91,7 @@ Steps to perfrom Kraken2 on the galaxy platform: [[Link](./notebooks/kraken2_in_
     2.15	54649	54649	S	9606	   Homo sapiens
     ```
 
+After clean up, the FastQ screen report showed only few contaminants are in the read set.  
+![afterkraken](./data/02_intermediate/SRR799769_Unclassified_1_screen.png)
 
 - 

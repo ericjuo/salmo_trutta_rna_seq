@@ -47,3 +47,8 @@ Trimmomatic_trimmed files were subjected to fastq_screen using ptyhon code:
 ```
 ptyhon ../../scripts/run_fastq_screen.py
 ```
+
+The foreign species contaminants depleted files from Kraken2 were analysed with FastQ screen again:
+```
+for i in $(ls *_Unclassified_[1,2].fastq);do ~/bin/FastQ-Screen-0.15.2/fastq_screen --aligner bowtie2 $i; done
+```
