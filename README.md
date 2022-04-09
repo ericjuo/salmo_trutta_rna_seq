@@ -16,13 +16,43 @@ Steps to download the whole dataset: [[Link](notebooks/obtain_raw_reads_from_GEO
 - [x] Remove adapter sequences  
 - [x] Trim bases which the Pred quality score is below 20
 - [x] Remove reads less than 35 bp  
-- [x] Remove foreign species contamination
-- [x] Pool clean reads of different tissues
+- [x] Remove foreign species contaminants
 - [ ] De novo assemble using Trinity
 - [ ] Annotate transcripts using Blastn and Blastx and fish and mammalian nt and protein databases with a cut off e-value < 1E-15.  
 - [ ] Analyse gene expression using RSEM with `--no_polyA` parameter and default settings.  
 - [ ] Statistical analysis differential expression using edgeR with a cutoff FDR <0.1.  
 - [ ] Draw differential expressed genes using VennDiagram in R, Bioconductor.  
+
+## Pipline
+All analysis has been written into a snakemake pipeline. If you wish to reproduce theses analysis as I did, you can clone this git repository.  
+```
+$ git clone git@github.com:ericjuo/salmo_trutta_rna_seq.git
+```  
+Setup conda environment to run softwares used in the pipeline.
+```
+$ mamba env create -f requirements.yaml
+```  
+Download raw reads from GEO website.
+```
+prefetch --option-file data/01_raw/SRR_Acc_List.txt -O data/01_raw
+```
+
+Download databases for Trimmomatic, fastqc_screen and kraken2 tools. 
+```
+$ mkdir -p contaminants/adapters/
+$ wget -O contaminants/adapters/TruSeq2-PE.fa \ 
+https://github.com/timflutre/trimmomatic/blob/master/adapters/TruSeq2-PE.fa
+$ fastq_screen --get_genomes --outdir contaminants/
+$ wget -O contaminants/minikraken2.tgz \ 
+ftp://ftp.ccb.jhu.edu/pub/data/kraken2_dbs/old/minikraken2_v2_8GB_201904.tgz
+$ cd contaminants
+$ tar -xzvf minikraken2.tgz
+$ cd ..
+```  
+Run snakemake pipeline on the fly.
+```
+snakemake --cores 10 --use-conda 
+```
 
 ##  Analysis
 -   The matadata analysis show that there are 2 sample groups (fish group from control River Teign and high metal content River Hayle ). For each group, there are RNA-Seq of gill, stomach and intestine, trunk kidney and liver tissues.  
@@ -39,24 +69,11 @@ Steps to perform metadata analysis: [[Link](notebooks/metadata_analysis.ipynb)]
     |  6 | SRR799775 | 0.272784 | trunk kidney          | control                |
     |  7 | SRR799776 | 0.338982 | liver                 | control                |  
 
--   The initial qualtiy of these raw reads were inspected using FastQC software. 
 
-    [SRR799769_1](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799769_1_fastqc.html),
-    [SRR799769_2](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799769_2_fastqc.html),
-    [SRR799770_1](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799770_1_fastqc.html),
-    [SRR799770_2](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799770_2_fastqc.html),
-    [SRR799771_1](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799771_1_fastqc.html),
-    [SRR799771_2](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799771_2_fastqc.html),
-    [SRR799772_1](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799772_1_fastqc.html),
-    [SRR799772_2](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799772_2_fastqc.html),
-    [SRR799773_1](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799773_1_fastqc.html),
-    [SRR799773_2](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799773_2_fastqc.html),
-    [SRR799774_1](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799774_1_fastqc.html),
-    [SRR799774_2](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799774_2_fastqc.html),
-    [SRR799775_1](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799775_1_fastqc.html),
-    [SRR799775_2](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799775_2_fastqc.html),
-    [SRR799776_1](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799776_1_fastqc.html),
-    [SRR799776_2](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799776_2_fastqc.html) 
+-   The initial qualtiy of these raw reads were inspected using FastQC and MultiQC software.  
+    Initial QC report: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/report/initial_multiqc/raw_read_multiqc_report.html)]
+    ![initqc](report/initial_multiqc/fastqc_per_base_sequence_quality_plot.png)
+    
 
 - Shift in GC content peak indicates potential contamination with other speices.  
 ![gc](./data/02_intermediate/SRR799769_1_fastqc_gc.png)  
@@ -68,30 +85,12 @@ Steps to perform metadata analysis: [[Link](notebooks/metadata_analysis.ipynb)]
 Quality report of trimmomatic-trimmed reads from FastQC software: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799770_1_paired_trimmomatic_fastqc.html)]  
 Steps to perform trimmomatic: [[Link](./notebooks/quality_trimming_using_trimmomatic.md)]
 
-- Raw reads were also trimmed with sickle software for comparison.   
-Quality report of sickle-trimmed reads from FastQC software: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/SRR799770_1_sickle_fastqc.html)]  
-Steps to perform sickle: [[Link](./notebooks/quality_trimming_using_sickle.md)]
+- Quality of reads after trimming were summarized in multiqc report. Low quality bases at 3'end has been completely trimmed off: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/report/post_trim_multiqc/trimmomatic_trim_multiqc_report.html)]  
+![postqc](report/post_trim_multiqc/fastqc_per_base_sequence_quality_plot.png)
 
-- There is no much difference between trimming with trimmomatic or sickle program. Both trimming program sucessfully trimmed low quality score bases in raw reads.  
-Steps to compare results of trimming softwares: [[Link](./notebooks/compare_quality_before_and_after_trimmed_using_qrqc.md)]  
-![BvA](./data/02_intermediate/SRR799770_1_Before_After_trimmed.jpg)  
+- Trommatic-trimmed reads were searched against human, mouse and E. Coli genome using Fastq Screen to identify foreign species contaminants. The result showed that the read set contains some mammalian contaminants.  
+![Contamination](report/pre_fastq_screen/SRR799769_1_paired_trimmomatic_screen.png)  
 
-- MultiQC report summarized the quality report of before and after trimming either using trimmomatic or sickle: [[Link](https://htmlpreview.github.io/?https://github.com/ericjuo/salmo_trutta_rna_seq/blob/master/data/02_intermediate/multiqc_report.html)]
+- Foreign species contamination were removed by Kraken2 software, leaving >98% reads unclassifed. These unclassified reads are our brown trout reads.    
+![kraken2](report/post_fastq_screen/SRR799769_unclassified_1_screen.png)
 
-- Trommatic-trimmed reads were searched against human, mouse and E. Coli genome using Fastq Screen to identify foreign species contamination. The result showed that the read set contains some mammalian contaminants.  
-Steps to perform FastQ Screen: [[Link](./notebooks/fastq_screen.md)]  
-![Contamination](./data/02_intermediate/SRR799769_1_paired_trimmomatic_screen.png)  
-
-- Foreign species contamination were removed by Kraken2 software. The report indicats there are about 2% human genome contaminated in the reads. Since brown traut genome is not search against, those unclassifed reads are clean reads without foreign species contaminants, and they are the target output.  
-Steps to perfrom Kraken2 on the galaxy platform: [[Link](./notebooks/kraken2_in_galaxy.md)]
-    ```
-    97.62	2485187	2485187	U	0	unclassified
-    2.38	60713	13	R	1	root
-    2.38	60486	1039	R1	131567	  cellular organisms
-    2.15	54649	54649	S	9606	   Homo sapiens
-    ```
-
-After clean up, the FastQ screen report showed only few contaminants are in the read set.  
-![afterkraken](./data/02_intermediate/SRR799769_Unclassified_1_screen.png)
-
-- 
