@@ -1,0 +1,372 @@
+argProcessor.o: argProcessor.cpp argProcessor.hpp \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/map \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_tree.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_algobase.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/c++config.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/os_defines.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/features.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/sys/cdefs.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/wordsize.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/gnu/stubs.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/gnu/stubs-64.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/cpu_defines.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/functexcept.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/exception_defines.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/cpp_type_traits.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/type_traits.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/numeric_traits.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_pair.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/move.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/concept_check.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/type_traits \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_iterator_base_types.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_iterator_base_funcs.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/debug/assertions.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_iterator.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/ptr_traits.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/debug/debug.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/predefined_ops.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/allocator.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/c++allocator.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/new_allocator.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/new \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/exception \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/exception.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/exception_ptr.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/cxxabi_init_exception.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/include/stddef.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/typeinfo \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/hash_bytes.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/nested_exception.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/memoryfwd.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_function.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/backward/binders.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/alloc_traits.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/alloc_traits.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/aligned_buffer.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_map.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/initializer_list \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/tuple \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/utility \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_relops.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/array \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/stdexcept \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/string \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stringfwd.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/char_traits.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/postypes.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/cwchar \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/wchar.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/stdio.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/include/stdarg.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/wchar.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/cstdint \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/include/stdint.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/stdint.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/localefwd.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/c++locale.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/clocale \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/locale.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/locale.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/iosfwd \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/cctype \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/ctype.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/types.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/typesizes.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/endian.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/endian.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/byteswap.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/ostream_insert.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/cxxabi_forced.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/range_access.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/basic_string.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/atomicity.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/gthr.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/gthr-default.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/pthread.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/sched.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/time.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/sched.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/time.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/pthreadtypes.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/setjmp.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/atomic_word.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/string_conversions.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/cstdlib \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/stdlib.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/waitflags.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/waitstatus.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/sys/types.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/sys/select.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/select.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/sigset.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/sys/sysmacros.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/alloca.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/std_abs.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/cstdio \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/libio.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/_G_config.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/stdio_lim.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/sys_errlist.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/cerrno \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/errno.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/errno.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/linux/errno.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/asm/errno.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/asm-generic/errno.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/asm-generic/errno-base.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/functional_hash.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/basic_string.tcc \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/uses_allocator.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/invoke.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_multimap.h \
+ /opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/stdlib.h
+
+argProcessor.hpp:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/map:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_tree.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_algobase.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/c++config.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/os_defines.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/features.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/sys/cdefs.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/wordsize.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/gnu/stubs.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/gnu/stubs-64.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/cpu_defines.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/functexcept.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/exception_defines.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/cpp_type_traits.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/type_traits.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/numeric_traits.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_pair.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/move.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/concept_check.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/type_traits:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_iterator_base_types.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_iterator_base_funcs.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/debug/assertions.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_iterator.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/ptr_traits.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/debug/debug.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/predefined_ops.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/allocator.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/c++allocator.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/new_allocator.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/new:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/exception:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/exception.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/exception_ptr.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/cxxabi_init_exception.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/include/stddef.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/typeinfo:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/hash_bytes.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/nested_exception.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/memoryfwd.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_function.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/backward/binders.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/alloc_traits.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/alloc_traits.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/aligned_buffer.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_map.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/initializer_list:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/tuple:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/utility:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_relops.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/array:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/stdexcept:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/string:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stringfwd.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/char_traits.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/postypes.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/cwchar:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/wchar.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/stdio.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/include/stdarg.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/wchar.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/cstdint:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/include/stdint.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/stdint.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/localefwd.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/c++locale.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/clocale:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/locale.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/locale.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/iosfwd:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/cctype:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/ctype.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/types.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/typesizes.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/endian.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/endian.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/byteswap.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/ostream_insert.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/cxxabi_forced.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/range_access.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/basic_string.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/atomicity.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/gthr.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/gthr-default.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/pthread.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/sched.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/time.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/sched.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/time.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/pthreadtypes.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/setjmp.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/x86_64-conda_cos6-linux-gnu/bits/atomic_word.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/ext/string_conversions.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/cstdlib:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/stdlib.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/waitflags.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/waitstatus.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/sys/types.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/sys/select.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/select.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/sigset.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/sys/sysmacros.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/alloca.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/std_abs.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/cstdio:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/libio.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/_G_config.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/stdio_lim.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/sys_errlist.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/cerrno:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/errno.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/bits/errno.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/linux/errno.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/asm/errno.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/asm-generic/errno.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/asm-generic/errno-base.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/functional_hash.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/basic_string.tcc:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/uses_allocator.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/invoke.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/bits/stl_multimap.h:
+
+/opt/conda/conda-bld/trinity_1558862101141/_build_env/x86_64-conda_cos6-linux-gnu/include/c++/7.3.0/stdlib.h:

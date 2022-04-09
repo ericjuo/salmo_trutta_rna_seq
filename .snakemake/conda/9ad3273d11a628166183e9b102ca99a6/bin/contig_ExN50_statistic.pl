@@ -1,0 +1,1 @@
+../opt/trinity-2.8.4/util/misc/contig_ExN50_statistic.pl

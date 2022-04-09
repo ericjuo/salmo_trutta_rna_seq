@@ -1,0 +1,101 @@
+{
+  "build": "0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc"
+  ],
+  "extracted_package_dir": "/home/ericjuo/miniconda3/pkgs/jemalloc-4.5.0-0",
+  "features": "",
+  "files": [
+    "bin/jemalloc-config",
+    "bin/jemalloc.sh",
+    "bin/jeprof",
+    "include/jemalloc/jemalloc.h",
+    "lib/libjemalloc.a",
+    "lib/libjemalloc.so",
+    "lib/libjemalloc.so.2",
+    "lib/libjemalloc_pic.a",
+    "lib/pkgconfig/jemalloc.pc",
+    "share/doc/jemalloc/jemalloc.html",
+    "share/man/man3/jemalloc.3"
+  ],
+  "fn": "jemalloc-4.5.0-0.tar.bz2",
+  "license": "BSD",
+  "link": {
+    "source": "/home/ericjuo/miniconda3/pkgs/jemalloc-4.5.0-0",
+    "type": 1
+  },
+  "md5": "d183fd58a59c904ba9dbbeecdcfb279a",
+  "name": "jemalloc",
+  "package_tarball_full_path": "/home/ericjuo/miniconda3/pkgs/jemalloc-4.5.0-0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/jemalloc-config",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256_in_prefix": "4e40e222fb7a2955d8523ebb58e112b899b8687b21a88b0dd532938950659149"
+      },
+      {
+        "_path": "bin/jemalloc.sh",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256_in_prefix": "46270d55fe12c454fed5440e841c24cf12f713b49e7ee4141220e7a5ffb5cd67"
+      },
+      {
+        "_path": "bin/jeprof",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/jemalloc/jemalloc.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/libjemalloc.a",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/libjemalloc.so",
+        "path_type": "softlink"
+      },
+      {
+        "_path": "lib/libjemalloc.so.2",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/_b_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "sha256_in_prefix": "525ce3c0949283edf4a549d9610dda40c60c3a123b25e57d82cd17c0ad591b8b"
+      },
+      {
+        "_path": "lib/libjemalloc_pic.a",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/pkgconfig/jemalloc.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256_in_prefix": "a09a477630590f57861aa8c23ff347db352f182cecd0d23b3159efefb3b3d3c7"
+      },
+      {
+        "_path": "share/doc/jemalloc/jemalloc.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/man/man3/jemalloc.3",
+        "path_type": "hardlink"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "efa697216c9cfb5811a481445e8ebf839c19c1f8019db118d8524936626e91a0",
+  "size": 6504047,
+  "subdir": "linux-64",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/linux-64/jemalloc-4.5.0-0.tar.bz2",
+  "version": "4.5.0"
+}

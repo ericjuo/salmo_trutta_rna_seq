@@ -1,0 +1,131 @@
+{
+  "build": "h7e5ed60_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [
+    "boost-cpp >=1.74.0,<1.74.1.0a0",
+    "bzip2 >=1.0.8,<2.0a0",
+    "icu >=69.1,<70.0a0",
+    "libgcc-ng >=10.3.0",
+    "libjemalloc >=5.2.1",
+    "libstdcxx-ng >=10.3.0",
+    "libzlib >=1.2.11,<1.3.0a0",
+    "tbb >=2021.4.0",
+    "tbb >=2021.5.0"
+  ],
+  "extracted_package_dir": "/home/ericjuo/miniconda3/pkgs/salmon-1.8.0-h7e5ed60_1",
+  "features": "",
+  "files": [
+    "bin/salmon",
+    "lib/graphdump/graphdump-targets-release.cmake",
+    "lib/graphdump/graphdump-targets.cmake",
+    "lib/libgraphdump.a",
+    "lib/libntcard.a",
+    "lib/libsalmon_core.a",
+    "lib/libtwopaco.a",
+    "lib/ntcard/ntcard-targets-release.cmake",
+    "lib/ntcard/ntcard-targets.cmake",
+    "lib/twopaco/twopaco-targets-release.cmake",
+    "lib/twopaco/twopaco-targets.cmake"
+  ],
+  "fn": "salmon-1.8.0-h7e5ed60_1.tar.bz2",
+  "license": "GPLv3",
+  "link": {
+    "source": "/home/ericjuo/miniconda3/pkgs/salmon-1.8.0-h7e5ed60_1",
+    "type": 1
+  },
+  "md5": "db3130405d334292f82413e73d18ace8",
+  "name": "salmon",
+  "package_tarball_full_path": "/home/ericjuo/miniconda3/pkgs/salmon-1.8.0-h7e5ed60_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/salmon",
+        "path_type": "hardlink",
+        "sha256": "6e6ef19012314c9bf66160fe6f7bbfcd8aac6ec67cc361a236b35928042ba456",
+        "sha256_in_prefix": "6e6ef19012314c9bf66160fe6f7bbfcd8aac6ec67cc361a236b35928042ba456",
+        "size_in_bytes": 12364168
+      },
+      {
+        "_path": "lib/graphdump/graphdump-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "9e03a112fa37b4555f39c342dcc65d1af2c780bc06577ca591b00e119e458027",
+        "sha256_in_prefix": "9e03a112fa37b4555f39c342dcc65d1af2c780bc06577ca591b00e119e458027",
+        "size_in_bytes": 812
+      },
+      {
+        "_path": "lib/graphdump/graphdump-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "7f93d812f41e3c552df6633022178445cd9e7ce5049d9d8b28ac49d611162cd0",
+        "sha256_in_prefix": "7f93d812f41e3c552df6633022178445cd9e7ce5049d9d8b28ac49d611162cd0",
+        "size_in_bytes": 3072
+      },
+      {
+        "_path": "lib/libgraphdump.a",
+        "path_type": "hardlink",
+        "sha256": "4c978541626e0a311c6193e3f0861fd535f1b6f05e24ab57ca45ecd93630d1c7",
+        "sha256_in_prefix": "4c978541626e0a311c6193e3f0861fd535f1b6f05e24ab57ca45ecd93630d1c7",
+        "size_in_bytes": 488522
+      },
+      {
+        "_path": "lib/libntcard.a",
+        "path_type": "hardlink",
+        "sha256": "594da6459f5fbf88a3af9ba1803d5057390164542545a43257326aa5d1b7a33c",
+        "sha256_in_prefix": "594da6459f5fbf88a3af9ba1803d5057390164542545a43257326aa5d1b7a33c",
+        "size_in_bytes": 59570
+      },
+      {
+        "_path": "lib/libsalmon_core.a",
+        "path_type": "hardlink",
+        "sha256": "284e48b5003491bd23188567e197a9e62ef756f364e64471d74f475df3d8b23e",
+        "sha256_in_prefix": "284e48b5003491bd23188567e197a9e62ef756f364e64471d74f475df3d8b23e",
+        "size_in_bytes": 5217506
+      },
+      {
+        "_path": "lib/libtwopaco.a",
+        "path_type": "hardlink",
+        "sha256": "841233e44d3d660d1a339e39c3eec7229c49c633c3d1e1e0198668f8a5ca9ee4",
+        "sha256_in_prefix": "841233e44d3d660d1a339e39c3eec7229c49c633c3d1e1e0198668f8a5ca9ee4",
+        "size_in_bytes": 3436324
+      },
+      {
+        "_path": "lib/ntcard/ntcard-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "55424ab69861d2fdedc03dec37de5ddedf78bf9d59ff53a3a37ce7c10e708c42",
+        "sha256_in_prefix": "55424ab69861d2fdedc03dec37de5ddedf78bf9d59ff53a3a37ce7c10e708c42",
+        "size_in_bytes": 791
+      },
+      {
+        "_path": "lib/ntcard/ntcard-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "ba75b030c0c7b24f6f844dfd312b6f6380746f0e89dcdfb929b88580d2807f1f",
+        "sha256_in_prefix": "ba75b030c0c7b24f6f844dfd312b6f6380746f0e89dcdfb929b88580d2807f1f",
+        "size_in_bytes": 3060
+      },
+      {
+        "_path": "lib/twopaco/twopaco-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "363586382184839c8e423caa74a9b1af6671950ceb0ef787421e196370fce187",
+        "sha256_in_prefix": "363586382184839c8e423caa74a9b1af6671950ceb0ef787421e196370fce187",
+        "size_in_bytes": 798
+      },
+      {
+        "_path": "lib/twopaco/twopaco-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "17d5028549bc9a8f3a4335bf4df31036ca9e7dccb74f100e80d4979d8f5304f2",
+        "sha256_in_prefix": "17d5028549bc9a8f3a4335bf4df31036ca9e7dccb74f100e80d4979d8f5304f2",
+        "size_in_bytes": 3064
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "de22be46feeffca9cc2b604ae33715b2d07b4bc848f79fd90374d542f5d84283",
+  "size": 6200390,
+  "subdir": "linux-64",
+  "timestamp": 1647077953000,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/linux-64/salmon-1.8.0-h7e5ed60_1.tar.bz2",
+  "version": "1.8.0"
+}

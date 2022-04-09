@@ -1,0 +1,79 @@
+#!/bin/sh
+
+usage() {
+	cat <<EOF
+Usage:
+  /home/ericjuo/Projects/salmo_trutta_rna_seq/.snakemake/conda/9ad3273d11a628166183e9b102ca99a6/bin/jemalloc-config <option>
+Options:
+  --help | -h  : Print usage.
+  --version    : Print jemalloc version.
+  --revision   : Print shared library revision number.
+  --config     : Print configure options used to build jemalloc.
+  --prefix     : Print installation directory prefix.
+  --bindir     : Print binary installation directory.
+  --datadir    : Print data installation directory.
+  --includedir : Print include installation directory.
+  --libdir     : Print library installation directory.
+  --mandir     : Print manual page installation directory.
+  --cc         : Print compiler used to build jemalloc.
+  --cflags     : Print compiler flags used to build jemalloc.
+  --cppflags   : Print preprocessor flags used to build jemalloc.
+  --ldflags    : Print library flags used to build jemalloc.
+  --libs       : Print libraries jemalloc was linked against.
+EOF
+}
+
+prefix="/home/ericjuo/Projects/salmo_trutta_rna_seq/.snakemake/conda/9ad3273d11a628166183e9b102ca99a6"
+exec_prefix="/home/ericjuo/Projects/salmo_trutta_rna_seq/.snakemake/conda/9ad3273d11a628166183e9b102ca99a6"
+
+case "$1" in
+--help | -h)
+	usage
+	exit 0
+	;;
+--version)
+	echo "4.5.0-0-g04380e79f1e2428bd0ad000bbc6e3d2dfc6b66a5"
+	;;
+--revision)
+	echo "2"
+	;;
+--config)
+	echo "--disable-debug --prefix=/home/ericjuo/Projects/salmo_trutta_rna_seq/.snakemake/conda/9ad3273d11a628166183e9b102ca99a6 CC=/home/ericjuo/Projects/salmo_trutta_rna_seq/.snakemake/conda/9ad3273d11a628166183e9b102ca99a6/bin/gcc"
+	;;
+--prefix)
+	echo "/home/ericjuo/Projects/salmo_trutta_rna_seq/.snakemake/conda/9ad3273d11a628166183e9b102ca99a6"
+	;;
+--bindir)
+	echo "/home/ericjuo/Projects/salmo_trutta_rna_seq/.snakemake/conda/9ad3273d11a628166183e9b102ca99a6/bin"
+	;;
+--datadir)
+	echo "/home/ericjuo/Projects/salmo_trutta_rna_seq/.snakemake/conda/9ad3273d11a628166183e9b102ca99a6/share"
+	;;
+--includedir)
+	echo "/home/ericjuo/Projects/salmo_trutta_rna_seq/.snakemake/conda/9ad3273d11a628166183e9b102ca99a6/include"
+	;;
+--libdir)
+	echo "/home/ericjuo/Projects/salmo_trutta_rna_seq/.snakemake/conda/9ad3273d11a628166183e9b102ca99a6/lib"
+	;;
+--mandir)
+	echo "/home/ericjuo/Projects/salmo_trutta_rna_seq/.snakemake/conda/9ad3273d11a628166183e9b102ca99a6/share/man"
+	;;
+--cc)
+	echo "/home/ericjuo/Projects/salmo_trutta_rna_seq/.snakemake/conda/9ad3273d11a628166183e9b102ca99a6/bin/gcc"
+	;;
+--cflags)
+	echo "-std=gnu11 -Wall -Werror=declaration-after-statement -Wsign-compare -pipe -g3 -fvisibility=hidden -O3 -funroll-loops"
+	;;
+--cppflags)
+	echo "-D_GNU_SOURCE -D_REENTRANT"
+	;;
+--ldflags)
+	echo " "
+	;;
+--libs)
+	echo "-lrt -lm  -lpthread"
+	;;
+*)
+	usage
+	exit 1
+esac

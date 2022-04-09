@@ -1,0 +1,7 @@
+include "/home/ericjuo/Projects/salmo_trutta_rna_seq/.snakemake/conda/9ad3273d11a628166183e9b102ca99a6/share/X11/locale/en_US.UTF-8/Compose"
+# Khmer digraphs
+<U17ff>	:	"ាំ"
+<U17fe>	:	"ោះ"
+<U17fd>	:	"េះ"
+<U17fc>	:	"ុំ"
+<U17fb>	:	"ុះ"

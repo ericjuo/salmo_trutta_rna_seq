@@ -1,0 +1,1 @@
+../opt/trinity-2.8.4/util/run_Trinity_from_samples_file.pl

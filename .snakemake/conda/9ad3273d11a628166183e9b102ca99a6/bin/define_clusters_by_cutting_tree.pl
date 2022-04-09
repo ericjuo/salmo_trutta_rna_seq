@@ -1,0 +1,1 @@
+../opt/trinity-2.8.4/Analysis/DifferentialExpression/define_clusters_by_cutting_tree.pl

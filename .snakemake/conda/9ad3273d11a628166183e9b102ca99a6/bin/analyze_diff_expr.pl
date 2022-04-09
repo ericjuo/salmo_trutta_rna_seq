@@ -1,0 +1,1 @@
+../opt/trinity-2.8.4/Analysis/DifferentialExpression/analyze_diff_expr.pl

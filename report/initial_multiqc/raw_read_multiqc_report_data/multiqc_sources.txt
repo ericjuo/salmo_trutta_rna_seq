@@ -1,0 +1,17 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR799772_2	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799772_2_fastqc.zip
+FastQC	all_sections	SRR799776_2	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799776_2_fastqc.zip
+FastQC	all_sections	SRR799769_2	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799769_2_fastqc.zip
+FastQC	all_sections	SRR799774_1	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799774_1_fastqc.zip
+FastQC	all_sections	SRR799772_1	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799772_1_fastqc.zip
+FastQC	all_sections	SRR799770_1	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799770_1_fastqc.zip
+FastQC	all_sections	SRR799769_1	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799769_1_fastqc.zip
+FastQC	all_sections	SRR799776_1	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799776_1_fastqc.zip
+FastQC	all_sections	SRR799775_2	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799775_2_fastqc.zip
+FastQC	all_sections	SRR799770_2	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799770_2_fastqc.zip
+FastQC	all_sections	SRR799773_1	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799773_1_fastqc.zip
+FastQC	all_sections	SRR799771_1	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799771_1_fastqc.zip
+FastQC	all_sections	SRR799773_2	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799773_2_fastqc.zip
+FastQC	all_sections	SRR799771_2	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799771_2_fastqc.zip
+FastQC	all_sections	SRR799774_2	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799774_2_fastqc.zip
+FastQC	all_sections	SRR799775_1	/home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/inital_fastqc/SRR799775_1_fastqc.zip

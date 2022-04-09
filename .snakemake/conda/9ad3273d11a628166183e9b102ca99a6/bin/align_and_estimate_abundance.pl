@@ -1,0 +1,1 @@
+../opt/trinity-2.8.4/util/align_and_estimate_abundance.pl
