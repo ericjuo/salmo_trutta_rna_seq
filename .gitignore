@@ -16,8 +16,14 @@ Trimmomatic-0.39/
 # ignore log giles
 data/02_intermediate/*.txt
 
+# ignore data/03_processed
+data/03_processed/
+
 # ignore doc/
 doc/*
+
+# ignore credentials
+credentials/
 
 # Ignore multiQC report (folder)
 data/02_intermediate/multiqc_data_1/*
@@ -42,7 +48,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-env/
+
 build/
 develop-eggs/
 dist/
