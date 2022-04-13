@@ -37,6 +37,8 @@ test/*
 # Ignore files uder contaminants folder
 contaminants/*
 
+.snakemake/*
+
 # =====================================
 # snakemake gitignore
 # Download from https://github.com/snakemake-workflows/docs/blob/master/.gitignore
