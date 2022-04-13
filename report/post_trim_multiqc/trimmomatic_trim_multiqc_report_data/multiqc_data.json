@@ -28809,7 +28809,11 @@
     "config_analysis_dir": [
         "data/02_intermediate/trimmomatic_trimmed_fastqc/"
     ],
+<<<<<<< HEAD
     "config_creation_date": "2022-04-12, 17:13",
+=======
+    "config_creation_date": "2022-04-09, 09:28",
+>>>>>>> 8f94ceb9c0faf97f42aa838e7fd88b182b5201fd
     "config_git_hash": null,
     "config_intro_text": null,
     "config_report_comment": null,

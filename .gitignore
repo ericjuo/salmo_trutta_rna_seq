@@ -16,6 +16,7 @@ Trimmomatic-0.39/
 # ignore log giles
 data/02_intermediate/*.txt
 
+<<<<<<< HEAD
 # ignore data/03_processed
 data/03_processed/
 
@@ -27,6 +28,10 @@ credentials/
 
 # ignore zip files
 *.zip
+=======
+# ignore doc/
+doc/*
+>>>>>>> 8f94ceb9c0faf97f42aa838e7fd88b182b5201fd
 
 # Ignore multiQC report (folder)
 data/02_intermediate/multiqc_data_1/*
@@ -37,8 +42,11 @@ test/*
 # Ignore files uder contaminants folder
 contaminants/*
 
+<<<<<<< HEAD
 .snakemake/*
 
+=======
+>>>>>>> 8f94ceb9c0faf97f42aa838e7fd88b182b5201fd
 # =====================================
 # snakemake gitignore
 # Download from https://github.com/snakemake-workflows/docs/blob/master/.gitignore
@@ -53,7 +61,11 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+<<<<<<< HEAD
 
+=======
+env/
+>>>>>>> 8f94ceb9c0faf97f42aa838e7fd88b182b5201fd
 build/
 develop-eggs/
 dist/
@@ -143,4 +155,8 @@ ENV/
 /site
 
 # mypy
+<<<<<<< HEAD
 .mypy_cache/
+=======
+.mypy_cache/
+>>>>>>> 8f94ceb9c0faf97f42aa838e7fd88b182b5201fd
