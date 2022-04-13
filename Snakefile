@@ -4,7 +4,8 @@
 #
 # Last modified April 9, 2022
 # First written April 7, 2022
-
+# from snakemake.remote.GS import RemoteProvider as GSRemoteProvider
+# GS = GSRemoteProvider(stay_on_remote=True)
 
 configfile: "config.yaml"
 
@@ -14,17 +15,21 @@ rule all:
         "report/post_trim_multiqc/trimmomatic_trim_multiqc_report.html",
         expand("report/pre_fastq_screen/{sample}_{replicate}_paired_trimmomatic_screen.png", sample=config["samples"], replicate=[1,2]),
         expand("report/post_fastq_screen/{sample}_unclassified_{replicate}_screen.png", sample=config["samples"], replicate=[1,2]),
-        "data/03_processed/trinity/brown_trout_trinity_rna_seq.fasta"
+        "data/02_intermediate/concatenated_pre_trinity/pre_trinity_1.fastq",
+        "data/02_intermediate/concatenated_pre_trinity/pre_trinity_2.fastq"
+        # "data/03_processed/trinity/brown_trout_trinity_rna_seq.fasta"
 
 # Convert SRA into paired-end fastq files
 rule fastq_dump:
     input:
         lambda wildcards: config["samples"][wildcards.sample]
     output:
-        temp("data/02_intermediate/{sample}_1.fastq"),
-        temp("data/02_intermediate/{sample}_2.fastq")
+        "data/02_intermediate/{sample}_1.fastq",
+        "data/02_intermediate/{sample}_2.fastq"
     params:
         outdir="data/02_intermediate/"
+    resources:
+        mem_gb=16
     conda:
         "env/sratools.yaml"
     shell:
@@ -36,7 +41,8 @@ rule gzip_compress:
         "data/02_intermediate/{sample}_{direction}.fastq"
     output:
         "data/02_intermediate/gzip_compress/{sample}_{direction}.fastq.gz"
-
+    resources:
+        mem_gb=16
     shell:
         "gzip -c {input} > {output}"
 
@@ -49,6 +55,8 @@ rule initial_fastqc:
     params:
         init_qc_dir='data/02_intermediate/inital_fastqc/'
     threads: 8
+    resources:
+        mem_gb=16
     conda:
         "env/fastqc.yaml"
     shell:
@@ -70,6 +78,8 @@ rule trimmomatic:
         "logs/trimmomatic/{sample}.log",
         "logs/trimmomatic/{sample}_summary.log",
     threads: 10
+    resources:
+        mem_gb=16
     conda:
         "env/trimmomatic.yaml"
     shell:
@@ -86,6 +96,8 @@ rule post_trim_fastqc:
     params:
         post_trim_qc_dir='data/02_intermediate/trimmomatic_trimmed_fastqc/'
     threads: 8
+    resources:
+        mem_gb=16
     conda:
         "env/fastqc.yaml"
     shell:
@@ -102,6 +114,8 @@ rule pre_fastq_screen:
         db_conf = "contaminants/FastQ_Screen_Genomes/fastq_screen.conf",
         pre_dir = "report/pre_fastq_screen/"
     threads: 10
+    resources:
+        mem_gb=16
     conda:
         "env/fastqscreen.yaml"
     shell:
@@ -125,6 +139,8 @@ rule kraken2:
         "logs/kraken2/{sample}_kraken2_summary.log",
         "logs/kraken2/{sample}_kraken2_stdout.log"
     threads: 10
+    resources:
+        mem_gb=16
     conda:
         "env/kraken2.yaml"
     shell:
@@ -141,6 +157,8 @@ rule post_fastq_screen:
         db_conf = "contaminants/FastQ_Screen_Genomes/fastq_screen.conf",
         post_dir = "report/post_fastq_screen/"
     threads: 10
+    resources:
+        mem_gb=16
     conda:
         "env/fastqscreen.yaml"
     shell:
@@ -156,44 +174,45 @@ rule pre_trinity_formatting:
         "data/02_intermediate/pre_trinity_formatting/{sample}_pre_trinity_{replicate}.fastq"
     conda:
         "env/bioawk.yaml"
+    resources:
+        mem_gb=16
     shell:
         "bioawk -c fastx '{{print \"@\"$name\"/{wildcards.replicate}\\n\"$seq\"\\n+\\n\"$qual}}' {input} > {output}"
 
+rule concatenate_pre_trinity:
+    input:
+        "data/02_intermediate/pre_trinity_formatting/SRR799769_pre_trinity_{replicate}.fastq",
+        "data/02_intermediate/pre_trinity_formatting/SRR799770_pre_trinity_{replicate}.fastq",
+        "data/02_intermediate/pre_trinity_formatting/SRR799771_pre_trinity_{replicate}.fastq",
+        "data/02_intermediate/pre_trinity_formatting/SRR799772_pre_trinity_{replicate}.fastq",
+        "data/02_intermediate/pre_trinity_formatting/SRR799773_pre_trinity_{replicate}.fastq",
+        "data/02_intermediate/pre_trinity_formatting/SRR799774_pre_trinity_{replicate}.fastq",
+        "data/02_intermediate/pre_trinity_formatting/SRR799775_pre_trinity_{replicate}.fastq",
+        "data/02_intermediate/pre_trinity_formatting/SRR799776_pre_trinity_{replicate}.fastq"
 
+    output:
+        "data/02_intermediate/concatenated_pre_trinity/pre_trinity_{replicate}.fastq"
+    shell:
+        "cat {input} > {output}"
 
-# Trinity is performed using snakemake wrapper downloaded from 
-# https://snakemake-wrappers.readthedocs.io/en/stable/wrappers/trinity.html
+# Command run on google virutial machine
+# singularity exec -e docker://registry.hub.docker.com/trinityrnaseq/trinityrnaseq Trinity --seqType fq --left "concatenated_pre_trinity/pre_trinity_1.fastq" --right "concatenated_pre_trinity/pre_trinity_2.fastq" --CPU 8 --output trinity/ --max_memory 60G
+
 rule trinity:
     input:
-        left=[
-            "data/02_intermediate/pre_trinity_formatting/SRR799769_pre_trinity_1.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799770_pre_trinity_1.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799771_pre_trinity_1.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799772_pre_trinity_1.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799773_pre_trinity_1.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799774_pre_trinity_1.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799775_pre_trinity_1.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799776_pre_trinity_1.fastq"
-        ],
-        right=[
-            "data/02_intermediate/pre_trinity_formatting/SRR799769_pre_trinity_2.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799770_pre_trinity_2.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799771_pre_trinity_2.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799772_pre_trinity_2.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799773_pre_trinity_2.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799774_pre_trinity_2.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799775_pre_trinity_2.fastq",
-            "data/02_intermediate/pre_trinity_formatting/SRR799776_pre_trinity_2.fastq"          
-        ]
+        left="data/02_intermediate/concatenated_pre_trinity/pre_trinity_1.fastq",
+        right="data/02_intermediate/concatenated_pre_trinity/pre_trinity_2.fastq"       
     output:
         "data/03_processed/trinity/brown_trout_trinity_rna_seq.fasta"
     log:
         'logs/trinity/trinity_assembly.log'
+    singularity:
+        "docker://registry.hub.docker.com/trinityrnaseq/trinityrnaseq"
+    threads: 8
     params:
-        extra="",
-        seqtype="fq"
-    threads: 10
+        seqtype='fq',
+        outdir='data/03_processed/trinity/'
     resources:
-        mem_gb=10
-    wrapper:
-        "v1.3.2/bio/trinity"
+        mem_gb=60
+    shell:
+        "Trinity --seqType {params.seqtype} --left {input.left} --right {input.right} --CPU {threads}  --output {params.outdir}"

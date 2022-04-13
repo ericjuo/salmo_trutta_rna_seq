@@ -25,6 +25,9 @@ doc/*
 # ignore credentials
 credentials/
 
+# ignore zip files
+*.zip
+
 # Ignore multiQC report (folder)
 data/02_intermediate/multiqc_data_1/*
 
