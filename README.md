@@ -17,7 +17,8 @@ Steps to download the whole dataset: [[Link](notebooks/obtain_raw_reads_from_GEO
 - [x] Trim bases which the Pred quality score is below 20
 - [x] Remove reads less than 35 bp  
 - [x] Remove foreign species contaminants
-- [ ] De novo assemble using Trinity
+- [x] De novo assemble using Trinity
+- [ ] Post assemble quality control 
 - [ ] Annotate transcripts using Blastn and Blastx and fish and mammalian nt and protein databases with a cut off e-value < 1E-15.  
 - [ ] Analyse gene expression using RSEM with `--no_polyA` parameter and default settings.  
 - [ ] Statistical analysis differential expression using edgeR with a cutoff FDR <0.1.  
