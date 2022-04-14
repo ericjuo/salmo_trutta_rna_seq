@@ -2,10 +2,8 @@
 #
 # Written by Eric Juo
 #
-# Last modified April 9, 2022
+# Last modified April 14, 2022
 # First written April 7, 2022
-# from snakemake.remote.GS import RemoteProvider as GSRemoteProvider
-# GS = GSRemoteProvider(stay_on_remote=True)
 
 
 configfile: "config.yaml"
@@ -16,7 +14,7 @@ rule all:
         "report/post_trim_multiqc/trimmomatic_trim_multiqc_report.html",
         expand("report/pre_fastq_screen/{sample}_{replicate}_paired_trimmomatic_screen.png", sample=config["samples"], replicate=[1,2]),
         expand("report/post_fastq_screen/{sample}_unclassified_{replicate}_screen.png", sample=config["samples"], replicate=[1,2]),
-        "data/03_processed/trinity/brown_trout_trinity_rna_seq.fasta"
+        # "trinity_Trinity.fasta"
 
 # Convert SRA into paired-end fastq files
 rule fastq_dump:
@@ -193,25 +191,49 @@ rule concatenate_pre_trinity:
         "data/02_intermediate/concatenated_pre_trinity/pre_trinity_{replicate}.fastq"
     shell:
         "cat {input} > {output}"
+# =====================================================================================================
+# The following rule is run on google cloud virtual machine e2-highmem-8 (8 vCPU, 64 GB RAM)
+# If your machine has at least 8 CPU and 60 GB RAM, you can uncommand the following rule and run it on you local machine.
+# singularity was installed using the bash script 'install_singularity.sh'
+# Trinity docker was download and converted into singularity image by singularity
+# Trinity command is as follow
+# singularity exec -e docker://registry.hub.docker.com/trinityrnaseq/trinityrnaseq Trinity --seqType fq --left "concatenated_pre_trinity/pre_trinity_1.fastq" --right "concatenated_pre_trinity/pre_trinity_2.fastq" --CPU 8 --output data/03_processed/trinity/ --max_memory 60G > logs/trinity/run.log 2> logs/trinity/error.log
+# ========================================================================================================
+# rule trinity:
+#     input:
+#         left="data/02_intermediate/concatenated_pre_trinity/pre_trinity_1.fastq",
+#         right="data/02_intermediate/concatenated_pre_trinity/pre_trinity_2.fastq"       
+#     output:
+#         "trinity_Trinity.fasta"
+#     log:
+#         'logs/trinity/trinity_assembly.log'
+#     singularity:
+#         "docker://registry.hub.docker.com/trinityrnaseq/trinityrnaseq"
+#     threads: 8
+#     params:
+#         seqtype='fq',
+#         outdir='data/03_processed/trinity/'
+#     resources:
+#         mem_gb=60
+#     shell:
+#         "Trinity --seqType {params.seqtype} --left {input.left} --right {input.right} --CPU {threads} --max_memory {resources.mem_gb}G --output {params.outdir} > logs/trinity/run.log 2> logs/trinity/error.log"
+# ============================================================================================================
+# End of section
+# ============================================================================================================
 
-# Command run on google virutial machine
-# singularity exec -e docker://registry.hub.docker.com/trinityrnaseq/trinityrnaseq Trinity --seqType fq --left "concatenated_pre_trinity/pre_trinity_1.fastq" --right "concatenated_pre_trinity/pre_trinity_2.fastq" --CPU 8 --output trinity/ --max_memory 60G
-
-rule trinity:
+rule read_representation:
     input:
-        left="data/02_intermediate/concatenated_pre_trinity/pre_trinity_1.fastq",
-        right="data/02_intermediate/concatenated_pre_trinity/pre_trinity_2.fastq"       
+        "data/03_processed/trinity/trinity.Trinity.fasta",
+        "data/02_intermediate/concatenated_pre_trinity/pre_trinity_1.fastq",
+        "data/02_intermediate/concatenated_pre_trinity/pre_trinity_2.fastq"
     output:
-        "data/03_processed/trinity/brown_trout_trinity_rna_seq.fasta"
-    log:
-        'logs/trinity/trinity_assembly.log'
-    singularity:
-        "docker://registry.hub.docker.com/trinityrnaseq/trinityrnaseq"
-    threads: 8
+        "report/read_representation/align_stats.txt",
+        "data/02_intermediate/bowtie2/aligned_reads.bam"
     params:
-        seqtype='fq',
-        outdir='data/03_processed/trinity/'
-    resources:
-        mem_gb=60
+        indexed_basename = "data/03_processed/trinity/brown_trout_trinity.fai",
+        max_aligned = 20
+    threads: 10
     shell:
-        "Trinity --seqType {params.seqtype} --left {input.left} --right {input.right} --CPU {threads}  --output {params.outdir}"
+        "bowtie2-build {input[0]} {params.indexed_basename} && bowtie2 -q -p {threads} "\
+        " --no-unal -k {params.max_aligned} -x {params.indexed_basename} " \
+        "-1 {input[1]} -2 {input[2]} 2> {output[0]} | samtools view -@ {threads} -b -o {output[1]}"

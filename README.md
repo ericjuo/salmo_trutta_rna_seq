@@ -92,5 +92,28 @@ Steps to perform trimmomatic: [[Link](./notebooks/quality_trimming_using_trimmom
 ![Contamination](report/pre_fastq_screen/SRR799769_1_paired_trimmomatic_screen.png)  
 
 - Foreign species contamination were removed by Kraken2 software, leaving >98% reads unclassifed. These unclassified reads are our brown trout reads.    
-![kraken2](report/post_fastq_screen/SRR799769_unclassified_1_screen.png)
+![kraken2](report/post_fastq_screen/SRR799769_unclassified_1_screen.png)  
+
+- After reads clean up, forward and reverse reads were separately pooled together and inputed to Trinity for de novo assembling. The resultant is 151,611 transcripts, which is very close to the number of brown trout's annotated transcripts (122,381) reported on ensembl. 
+Link to brown trout genome statistic: [[Link](https://asia.ensembl.org/Salmo_trutta/Info/Annotation)]  
+
+- The representation of assembled transcripts to input reads were calculated using bowtie2. The report showed that 89.91% paired reads can be realigned to the assembled transcripts, indicating good asseble quality.  
+```
+23453284 reads; of these:
+  23453284 (100.00%) were paired; of these:
+    3880194 (16.54%) aligned concordantly 0 times
+    4959861 (21.15%) aligned concordantly exactly 1 time
+    14613229 (62.31%) aligned concordantly >1 times
+    ----
+    3880194 pairs aligned concordantly 0 times; of these:
+      161179 (4.15%) aligned discordantly 1 time
+    ----
+    3719015 pairs aligned 0 times concordantly or discordantly; of these:
+      7438030 mates make up the pairs; of these:
+        4731395 (63.61%) aligned 0 times
+        869484 (11.69%) aligned exactly 1 time
+        1837151 (24.70%) aligned >1 times
+89.91% overall alignment rate
+```
+
 
