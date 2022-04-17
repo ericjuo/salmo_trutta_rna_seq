@@ -24,6 +24,13 @@ singularity exec -e docker://registry.hub.docker.com/trinityrnaseq/trinityrnaseq
 The assembled transcripts are sotred in trinity.Trinity.fasta file.
 
 ## Post assemble quality control
+### Basic statistic
+Basic statistics was caculated using trinity's perl script:
+```
+singularity exec -e docker://registry.hub.docker.com/trinityrnaseq/trinityrnaseq /usr/local/bin/util/TrinityStats.pl data/03_processed/trinity/trinity.Trinity.fasta > report/trinitystats/basic_stats.txt
+```
+
+### Representation of assembled transcripts
 To assess the representation of assembled transcripts to input reads, input reads were aligned back to the assembly using bowtie2.
 ```
 # assembled transcripts are indexed first
@@ -49,5 +56,26 @@ $ cat align-stats.txt
         869484 (11.69%) aligned exactly 1 time
         1837151 (24.70%) aligned >1 times
 89.91% overall alignment rate
+```
+### Blast against brown_trout cDNA database
+Salmo trutta cDNA database is downloaded from ensembl:
+```
+$ wget http://ftp.ensembl.org/pub/release-106/fasta/salmo_trutta/cdna/Salmo_trutta.fSalTru1.1.cdna.all.fa.gz
+```
+Perform blastn against borwn trout cDNA database:
+```
+singularity exec -e docker://registry.hub.docker.com/trinityrnaseq/trinityrnaseq blastn -query data/03_processed/trinity/trinity.Trinity.fasta -db contaminants/brown_trout_cDNA/brown_trout -out data/02_intermediate/blastn/blastn_1e-20.outfmt6 -evalue 1e-20 -num_threads 10 -max_target_seqs 1 -outfmt 6
+```
+Caculate percent coverage of transcripts to cDNA database using trinity's perl script
+```
+gunzip -c contaminants/brown_trout_cDNA/Salmo_trutta.fSalTru1.1.cdna.all.fa.gz | singularity exec -e docker://registry.hub.docker.com/trinityrnaseq/trinityrnaseq /usr/local/bin/util/analyze_blastPlus_topHit_coverage.pl data/02_intermediate/blastn/blastn_1e-20.outfmt6 data/03_processed/trinity/trinity.Trinity.fasta -
+```
+Draw brown trout cDNA coverage using R
+```
+trout <- read.table("data/02_intermediate/blastn/blastn_1e-20.outfmt6.hist")
+names(trout) <- c("pct_cov_bin", "count_in_bin", "accumulated_counts")
+jpeg(file="report/trinitystats/full_len_brown_trout_cDNA.jpg")
+barplot(trout$count_in_bin, names.arg=trout$pct_cov_bin, xlab="Percent coverage", ylab="Transcript counts", main="Brown Trout cDNA coverage")
+dev.off()
 ```
 

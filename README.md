@@ -98,6 +98,8 @@ Steps to perform trimmomatic: [[Link](./notebooks/quality_trimming_using_trimmom
 - After reads clean up, forward and reverse reads were separately pooled together and inputed to Trinity for de novo assembling. The resultant is 151,611 transcripts, which is very close to the number of brown trout's annotated transcripts (122,381) reported on ensembl. 
 Link to brown trout genome statistic: [[Link](https://asia.ensembl.org/Salmo_trutta/Info/Annotation)]  
 
+- Basic statisic was performed using trinity's perl script. Trinity has reconstructed 151,611 transcripts and predicted these transcripts were transcribed from 99,890 genes. The N50 of transcripts are 1,390 bp. The average length of transcripts is 830.04 bp.
+
 - The representation of assembled transcripts to input reads were calculated using bowtie2. The report showed that 89.91% paired reads can be realigned to the assembled transcripts, indicating good asseble quality.  
 ```
 23453284 reads; of these:
@@ -117,4 +119,6 @@ Link to brown trout genome statistic: [[Link](https://asia.ensembl.org/Salmo_tru
 89.91% overall alignment rate
 ```
 
+- Assembled transcripts were blasted against ensembl's brown trout cDNA database using blastn. The result showed that about 4,000 transcripts were reconstructed in full length, and about 12,800 transcripts have at least 50% coverage to brown trout cDNA.  
+![](report/trinitystats/full_len_brown_trout_cDNA.jpg)
 
