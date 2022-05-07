@@ -1,0 +1,36 @@
+#                                                                                          --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                      accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#              ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+TRINITY_DN14359_c1_g1_i1:684-2735  -            684 26199at7898          -            626  4.3e-221  735.3   0.0   1   1  8.7e-224  5.3e-221  735.0   0.0    21   601     1   607     1   612 0.95 -
+TRINITY_DN11556_c0_g1_i1:451-2322  -            624 26199at7898          -            626  1.9e-101  340.1   0.0   1   1  3.7e-104  2.2e-101  339.8   0.0     7   500    44   541    39   623 0.92 -
+TRINITY_DN44294_c0_g1_i7:703-2547  -            615 26199at7898          -            626   5.9e-99  331.8   0.1   1   1  1.2e-101   7.1e-99  331.5   0.1     9   547    40   581    36   615 0.86 -
+TRINITY_DN44294_c0_g1_i5:1374-3257 -            628 26199at7898          -            626   8.8e-99  331.2   0.1   1   1    2e-101   1.2e-98  330.8   0.1     9   546    39   581    35   626 0.85 -
+TRINITY_DN44294_c0_g1_i3:703-2544  -            614 26199at7898          -            626   9.5e-99  331.1   0.1   1   1  1.9e-101   1.2e-98  330.8   0.1     9   547    39   580    35   614 0.86 -
+TRINITY_DN3295_c0_g1_i1:2030-3991  -            654 26199at7898          -            626     3e-98  329.5   0.1   1   1  6.7e-101     4e-98  329.1   0.1     8   583    51   634    47   648 0.85 -
+TRINITY_DN3295_c0_g1_i8:1888-3849  -            654 26199at7898          -            626     3e-98  329.5   0.1   1   1  6.7e-101     4e-98  329.1   0.1     8   583    51   634    47   648 0.85 -
+TRINITY_DN44294_c0_g1_i4:703-2686  -            616 26199at7898          -            626   4.7e-97  325.5   0.1   1   1  9.6e-100   5.8e-97  325.2   0.1     9   547    39   582    35   616 0.86 -
+TRINITY_DN44294_c1_g1_i2:585-2474  -            630 26199at7898          -            626     6e-93  312.0   0.1   1   1   1.4e-95   8.3e-93  311.5   0.1     9   597    39   630    34   630 0.84 -
+TRINITY_DN19818_c0_g2_i1:224-1918  -            565 26199at7898          -            626   4.4e-83  279.4   0.5   1   1   9.5e-86   5.7e-83  279.0   0.5    14   501    56   557    49   565 0.86 -
+TRINITY_DN3418_c0_g1_i2:1677-3560  -            628 26199at7898          -            626     1e-82  278.2   0.0   1   1   2.4e-85   1.4e-82  277.7   0.0    12   596    27   607    22   614 0.84 -
+TRINITY_DN3418_c0_g1_i4:1628-3511  -            628 26199at7898          -            626   6.6e-82  275.5   0.0   1   1   1.5e-84   9.2e-82  275.0   0.0    12   596    27   607    22   614 0.84 -
+TRINITY_DN3418_c0_g1_i3:38-1750    -            571 26199at7898          -            626   3.2e-79  266.6   0.3   1   1   6.9e-82   4.2e-79  266.2   0.3    12   505    36   522    31   566 0.88 -
+TRINITY_DN24386_c0_g1_i1:225-1919  -            565 26199at7898          -            626   5.7e-66  222.8   0.1   1   1   1.3e-68   7.6e-66  222.4   0.1    11   486     4   451     1   457 0.85 -
+TRINITY_DN9709_c0_g1_i3:133-1515   -            461 26199at7898          -            626   6.1e-58  196.3   0.0   1   1   1.1e-60   6.9e-58  196.2   0.0    12   475     2   461     1   461 0.87 -
+TRINITY_DN9709_c0_g1_i7:133-1503   -            457 26199at7898          -            626   1.5e-55  188.4   0.0   1   1   2.8e-58   1.7e-55  188.3   0.0    12   475     2   457     1   457 0.85 -
+TRINITY_DN9709_c0_g1_i5:175-1458   -            428 26199at7898          -            626   3.5e-53  180.6   0.2   1   1   6.5e-56   3.9e-53  180.4   0.2    45   475     2   428     1   428 0.86 -
+TRINITY_DN34589_c0_g1_i1:41-796    -            252 26199at7898          -            626   1.4e-42  145.6   0.0   1   1   2.7e-45   1.6e-42  145.3   0.0   193   424     2   237     1   247 0.89 -
+TRINITY_DN2089_c0_g1_i9:556-2525   -            387 26199at7898          -            626   2.3e-36  125.1   0.1   1   1   4.4e-39   2.7e-36  124.8   0.1   199   597     3   385     1   387 0.81 -
+TRINITY_DN3418_c0_g2_i1:693-1670   -            326 26199at7898          -            626   8.6e-35  119.9   0.3   1   1   3.4e-37   2.1e-34  118.6   0.3   262   586     5   324     1   326 0.82 -
+TRINITY_DN2089_c0_g1_i10:484-1449  -            322 26199at7898          -            626   3.1e-30  104.8   0.1   1   1   6.8e-33   4.1e-30  104.4   0.1   288   599     1   298     1   314 0.81 -
+TRINITY_DN2089_c0_g1_i8:519-1238   -            240 26199at7898          -            626     3e-22   78.4   0.2   1   1   6.2e-25   3.7e-22   78.1   0.2   395   598     2   213     1   218 0.74 -
+TRINITY_DN2089_c0_g1_i18:484-1197  -            238 26199at7898          -            626   4.3e-22   77.9   0.1   1   1   8.7e-25   5.2e-22   77.6   0.1   395   599     2   214     1   230 0.79 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/26199at7898.hmm
+# Target file:     /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/initial_results/trinity.Trinity.fasta.modified.fas
+# Option settings: hmmsearch --domtblout /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/hmmer_output/initial_run_results/26199at7898.out --cpu 1 /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/26199at7898.hmm /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/initial_results/trinity.Trinity.fasta.modified.fas 
+# Current dir:     /home/ericjuo/Projects/salmo_trutta_rna_seq
+# Date:            Fri Apr 29 12:53:41 2022
+# [ok]

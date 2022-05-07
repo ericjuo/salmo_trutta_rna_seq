@@ -1,0 +1,18 @@
+# BUSCO version is: 5.3.2 
+# The lineage dataset is: actinopterygii_odb10 (Creation date: 2021-02-19, number of genomes: 26, number of BUSCOs: 3640)
+# Summarized benchmarking in BUSCO notation for file /home/ericjuo/Projects/salmo_trutta_rna_seq/data/03_processed/trinity/trinity.Trinity.fasta
+# BUSCO was run in mode: transcriptome
+
+	***** Results: *****
+
+	C:54.3%[S:25.2%,D:29.1%],F:9.3%,M:36.4%,n:3640	   
+	1974	Complete BUSCOs (C)			   
+	916	Complete and single-copy BUSCOs (S)	   
+	1058	Complete and duplicated BUSCOs (D)	   
+	337	Fragmented BUSCOs (F)			   
+	1329	Missing BUSCOs (M)			   
+	3640	Total BUSCO groups searched		   
+
+Dependencies and versions:
+	hmmsearch: 3.1
+	metaeuk: 5.34c21f2

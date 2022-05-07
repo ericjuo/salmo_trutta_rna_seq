@@ -1,0 +1,21 @@
+#                                                                                         --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                     accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#             ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+TRINITY_DN21889_c0_g2_i1:191-1621 -            477 36730at7898          -            481    1e-251  835.4  10.3   1   2  3.8e-146  1.3e-142  475.6   5.8     1   240    19   272    19   280 0.95 -
+TRINITY_DN21889_c0_g2_i1:191-1621 -            477 36730at7898          -            481    1e-251  835.4  10.3   2   2    7e-112  2.4e-108  362.6   0.1   223   404   279   464   271   474 0.94 -
+TRINITY_DN21889_c0_g2_i2:111-1541 -            477 36730at7898          -            481    1e-251  835.4  10.3   1   2  3.8e-146  1.3e-142  475.6   5.8     1   240    19   272    19   280 0.95 -
+TRINITY_DN21889_c0_g2_i2:111-1541 -            477 36730at7898          -            481    1e-251  835.4  10.3   2   2    7e-112  2.4e-108  362.6   0.1   223   404   279   464   271   474 0.94 -
+TRINITY_DN6382_c0_g1_i7:1-1755    -            585 36730at7898          -            481      0.11   10.8   0.0   1   2     0.014        50    2.1   0.0    48    70     7    29     3    39 0.80 -
+TRINITY_DN6382_c0_g1_i7:1-1755    -            585 36730at7898          -            481      0.11   10.8   0.0   2   2   0.00081       2.8    6.3   0.0    53    71   384   402   356   416 0.81 -
+TRINITY_DN6382_c0_g1_i1:1-1749    -            583 36730at7898          -            481      0.12   10.8   0.0   1   2     0.014        50    2.1   0.0    48    70     7    29     3    39 0.80 -
+TRINITY_DN6382_c0_g1_i1:1-1749    -            583 36730at7898          -            481      0.12   10.8   0.0   2   2   0.00082       2.8    6.2   0.0    53    71   382   400   356   414 0.81 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/36730at7898.hmm
+# Target file:     /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/initial_results/trinity.Trinity.fasta.modified.fas
+# Option settings: hmmsearch --domtblout /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/hmmer_output/initial_run_results/36730at7898.out --cpu 1 /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/36730at7898.hmm /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/initial_results/trinity.Trinity.fasta.modified.fas 
+# Current dir:     /home/ericjuo/Projects/salmo_trutta_rna_seq
+# Date:            Fri Apr 29 12:53:42 2022
+# [ok]

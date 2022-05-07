@@ -1,0 +1,32 @@
+#                                                                                         --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                     accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#             ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+TRINITY_DN8600_c0_g1_i1:56-3277   -           1074 14672at7898          -            955         0 1735.5  51.8   1   1         0         0 1735.3  51.8     1   955    38  1071    38  1071 0.95 -
+TRINITY_DN8600_c0_g1_i3:56-3861   -           1074 14672at7898          -            955         0 1718.4  51.7   1   1         0         0 1718.2  51.7     1   955    38  1071    38  1071 0.95 -
+TRINITY_DN8600_c0_g1_i2:30-3538   -            975 14672at7898          -            955         0 1570.8  60.0   1   1         0         0 1570.6  60.0    60   955     1   972     1   972 0.94 -
+TRINITY_DN2829_c0_g1_i7:2118-5696 -           1193 14672at7898          -            955   6.3e-05   20.7   9.6   1   5   6.8e-07    0.0014   16.2   2.9    21   213    13   210     2   231 0.75 -
+TRINITY_DN2829_c0_g1_i7:2118-5696 -           1193 14672at7898          -            955   6.3e-05   20.7   9.6   2   5    0.0015       2.9    5.2  17.1   575   651   233   309   218   314 0.86 -
+TRINITY_DN2829_c0_g1_i7:2118-5696 -           1193 14672at7898          -            955   6.3e-05   20.7   9.6   3   5         7   1.4e+04   -9.7  39.8   181   365   291   490   287   501 0.54 -
+TRINITY_DN2829_c0_g1_i7:2118-5696 -           1193 14672at7898          -            955   6.3e-05   20.7   9.6   4   5         7   1.4e+04  -11.4  40.4   169   374   711   927   681   940 0.77 -
+TRINITY_DN2829_c0_g1_i7:2118-5696 -           1193 14672at7898          -            955   6.3e-05   20.7   9.6   5   5   2.1e-07   0.00042   17.9   0.6   716   900   980  1164   940  1174 0.80 -
+TRINITY_DN2829_c0_g1_i2:2120-5698 -           1193 14672at7898          -            955   0.00042   17.9   0.6   1   5   7.6e-07    0.0015   16.1   3.9    21   222    13   219     2   240 0.73 -
+TRINITY_DN2829_c0_g1_i2:2120-5698 -           1193 14672at7898          -            955   0.00042   17.9   0.6   2   5    0.0013       2.5    5.4  15.5   576   650   234   308   213   311 0.87 -
+TRINITY_DN2829_c0_g1_i2:2120-5698 -           1193 14672at7898          -            955   0.00042   17.9   0.6   3   5         7   1.4e+04  -10.8  37.9   194   365   307   490   300   501 0.55 -
+TRINITY_DN2829_c0_g1_i2:2120-5698 -           1193 14672at7898          -            955   0.00042   17.9   0.6   4   5         7   1.4e+04  -11.4  40.4   169   374   711   927   681   940 0.77 -
+TRINITY_DN2829_c0_g1_i2:2120-5698 -           1193 14672at7898          -            955   0.00042   17.9   0.6   5   5   2.1e-07   0.00042   17.9   0.6   716   900   980  1164   940  1174 0.80 -
+TRINITY_DN4868_c0_g1_i4:397-3867  -           1157 14672at7898          -            955   0.00056   17.5  21.5   1   5   2.8e-07   0.00056   17.5  21.5    24   349    27   365    23   413 0.70 -
+TRINITY_DN4868_c0_g1_i4:397-3867  -           1157 14672at7898          -            955   0.00056   17.5  21.5   2   5         7   1.4e+04  -13.3  22.8   176   330   301   463   297   495 0.40 -
+TRINITY_DN4868_c0_g1_i4:397-3867  -           1157 14672at7898          -            955   0.00056   17.5  21.5   3   5         7   1.4e+04   -9.8  38.0   164   351   745   939   738   962 0.64 -
+TRINITY_DN4868_c0_g1_i4:397-3867  -           1157 14672at7898          -            955   0.00056   17.5  21.5   4   5       1.4   2.8e+03   -4.6   8.4   563   620   970  1027   960  1044 0.73 -
+TRINITY_DN4868_c0_g1_i4:397-3867  -           1157 14672at7898          -            955   0.00056   17.5  21.5   5   5       0.1     2e+02   -0.8   0.0   854   896  1086  1128  1068  1145 0.85 -
+TRINITY_DN9390_c2_g1_i1:38-1033   -            332 14672at7898          -            955    0.0034   14.9   1.5   1   1   2.4e-06    0.0047   14.4   1.5   249   329   129   214   122   217 0.81 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/14672at7898.hmm
+# Target file:     /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/initial_results/trinity.Trinity.fasta.modified.fas
+# Option settings: hmmsearch --domtblout /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/hmmer_output/initial_run_results/14672at7898.out --cpu 1 /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/14672at7898.hmm /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/initial_results/trinity.Trinity.fasta.modified.fas 
+# Current dir:     /home/ericjuo/Projects/salmo_trutta_rna_seq
+# Date:            Fri Apr 29 12:53:31 2022
+# [ok]

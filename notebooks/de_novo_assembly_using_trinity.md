@@ -36,7 +36,7 @@ To assess the representation of assembled transcripts to input reads, input read
 # assembled transcripts are indexed first
 $ bowtie2-build trinity.Trinity.fasta brown_trout_trinity.fai
 # The indexed transcripts are used in the input reads realignment
-$ bowtie2 -p 10 -q --no-unal -k 20 -x brown_trout_trinity.fai -1 pre_trinity_1.fasta -2 pre_trinity_2.fasta 2> align-stats.txt | samtools view -@ 10 -b brown_trout.bam
+$ bowtie2 -p 10 -q --no-unal -k 20 -x data/03_processed/trinity/brown_trout_trinity.fai -1 data/03_processed/trinity/brown_trout_trinity.fai -2 data/02_intermediate/concatenated_pre_trinity/pre_trinity_2.fastq 2> report/read_representation/align_stats.txt | samtools view -@ 10 -b data/02_intermediate/bowtie2/aligned_reads.bam
 ```
 The statistic of realignment showed that 89.91% of reads can align to the assembled transcripts, indicating good quality of this assembly.  
 ```
@@ -78,4 +78,75 @@ jpeg(file="report/trinitystats/full_len_brown_trout_cDNA.jpg")
 barplot(trout$count_in_bin, names.arg=trout$pct_cov_bin, xlab="Percent coverage", ylab="Transcript counts", main="Brown Trout cDNA coverage")
 dev.off()
 ```
+
+### Assess completness of transcript assembly using BUSCO
+Install
+```
+mamba create -n busco -c bioconda busco=5.3.2
+```
+Use BUSCO genes from actinopterygii to search against trinity assembly
+```
+busco -c 10 -i data/03_processed/trinity/trinity.Trinity.fasta -l actinopterygii_odb10 -o data/02_intermediate/busco -m transcriptome
+```
+Result in the short_summary.specific.actinopterygii_odb10.busco.txt file showed that 54.3% of highly conserved genes are reconstructed to full length. The commonly seen result of completness for non-model animal ranges from 50% up to 90% depending on the complexity of the species' biology (genome size, repetitive sequences).
+```
+# BUSCO version is: 5.3.2 
+# The lineage dataset is: actinopterygii_odb10 (Creation date: 2021-02-19, number of genomes: 26, number of BUSCOs: 3640)
+# Summarized benchmarking in BUSCO notation for file /home/ericjuo/Projects/salmo_trutta_rna_seq/data/03_processed/trinity/trinity.Trinity.fasta
+# BUSCO was run in mode: transcriptome
+
+	***** Results: *****
+
+	C:54.3%[S:25.2%,D:29.1%],F:9.3%,M:36.4%,n:3640	   
+	1974	Complete BUSCOs (C)			   
+	916	Complete and single-copy BUSCOs (S)	   
+	1058	Complete and duplicated BUSCOs (D)	   
+	337	Fragmented BUSCOs (F)			   
+	1329	Missing BUSCOs (M)			   
+	3640	Total BUSCO groups searched		   
+
+Dependencies and versions:
+	hmmsearch: 3.1
+	metaeuk: 5.34c21f2
+```
+### Estimate abunance of each transcrpt
+BAM file is sorted before input to abundance estimation
+```
+$ samtools sort -@ 10 ata/02_intermediate/bowtie2/aligned_reads.bam > ata/02_intermediate/bowtie2/aligned_reads_sorted.bam
+```
+
+concatenated pre_trinity paired end reads were used to esitmate abundance
+```
+$ singularity exec -e docker://registry.docker.com/trinityrnaseq/trinityrnaseq /usr/local/bin/util/align_and_estimate_abundance.pl --transcripts data/03_processed/trinity/trinity.Trinity.fasta --seqType fq --prep_reference --left data/02_intermediate/concatenated_pre_trinity/pre_trinity_1.fastq --right data/02_intermediate/concatenated_pre_trinity/pre_trinity_2.fastq --est_method RSEM --output_dir data/02_intermediate/RSEM_abundance --aln_method bowtie
+```
+The output is stored in data/02_intermdeiate/RSEM_abundance/RSEM.isoforms.results
+```
+transcript_id	gene_id	length	effective_length	expected_count	TPM	FPKM	IsoPct
+TRINITY_DN0_c0_g1_i11	TRINITY_DN0_c0_g1_i11	1071	894.55	6557.95	390.32	453.17	100.00
+TRINITY_DN0_c0_g1_i17	TRINITY_DN0_c0_g1_i17	1756	1579.55	1929.61	65.04	75.52	100.00
+TRINITY_DN0_c0_g1_i2	TRINITY_DN0_c0_g1_i2	1727	1550.55	1520.22	52.20	60.61	100.00
+TRINITY_DN0_c0_g1_i3	TRINITY_DN0_c0_g1_i3	1533	1356.55	469.59	18.43	21.40	100.00
+TRINITY_DN0_c0_g1_i5	TRINITY_DN0_c0_g1_i5	1684	1507.55	539.02	19.04	22.10	100.00
+TRINITY_DN0_c0_g1_i7	TRINITY_DN0_c0_g1_i7	1686	1509.55	1346.52	47.49	55.14	100.00
+TRINITY_DN0_c0_g1_i9	TRINITY_DN0_c0_g1_i9	1755	1578.55	4198.08	141.60	164.40	100.00
+TRINITY_DN10000_c0_g1_i1	TRINITY_DN10000_c0_g1_i1	337	161.66	4.00	1.32	1.53	100.00
+TRINITY_DN10000_c1_g1_i1	TRINITY_DN10000_c1_g1_i1	506	329.61	7.00	1.13	1.31	100.00
+```
+Create transcript and gene expression matrix
+```
+$ singularity exec -e docker://registry.docker.com/trinityrnaseq/trinityrnaseq /usr/local/bin/util/abundance_estimates_to_matrix.pl --est_method RSEM --gene_trans_map data/03_processed/trinity/trinity.Trinity.fasta.gene_trans_map --out_prefix RSEM --name_sample_by_basedir data/02_intermediate/RSEM_abundance/RSEM.isoforms.results
+```
+The output directory is the current working directory. 
+
+
+### Calculate E90N50 using trinity perl script
+Generate table group by transcirpt expression level percentil
+```
+$ singularity exec -e docker://registry.docker.com/trinityrnaseq/trinityrnaseq /usr/local/bin/util/misc/contig_ExN50_statistic.pl RSEM.isoform.counts.matrix data/03_processed/trinity/trinity.Trinity.fasta | tee ExN50.stats
+```
+Plot transcript expression percentil against N50
+```
+$ singularity exec -e docker://registry.docker.com/trinityrnaseq/trinityrnaseq /usr/local/bin/util/misc/plot_ExN50_statistic.Rscript  ExN50.stats
+```
+The output is ExN50_plot.pdf
 

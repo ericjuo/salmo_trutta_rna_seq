@@ -1,0 +1,19 @@
+#                                                                                         --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                     accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#             ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+TRINITY_DN2567_c0_g2_i1:637-1272  -            212 68875at7898          -            218     3e-41  141.0   1.7   1   2   2.3e-44   6.2e-41  140.0   1.1    32   118     3    89     1   126 0.93 -
+TRINITY_DN2567_c0_g2_i1:637-1272  -            212 68875at7898          -            218     3e-41  141.0   1.7   2   2       0.3   8.3e+02   -1.0   0.0   175   193   184   202   174   206 0.68 -
+TRINITY_DN56751_c0_g1_i1:623-1522 -            300 68875at7898          -            218   9.6e-09   34.8   5.8   1   1   6.2e-12   1.7e-08   33.9   5.8    33   120    49   142    25   169 0.75 -
+TRINITY_DN7976_c0_g2_i3:718-1587  -            290 68875at7898          -            218   8.4e-08   31.7   0.9   1   1   5.3e-11   1.5e-07   30.9   0.9     9   124    13   132     6   147 0.76 -
+TRINITY_DN7976_c0_g2_i2:718-1587  -            290 68875at7898          -            218   1.5e-07   30.9   0.6   1   1   9.5e-11   2.6e-07   30.1   0.6    39   124    42   132     8   147 0.79 -
+TRINITY_DN7976_c0_g2_i1:718-1572  -            285 68875at7898          -            218   1.7e-07   30.7   0.5   1   1   1.1e-10     3e-07   29.9   0.5    39   124    37   127    14   143 0.80 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/68875at7898.hmm
+# Target file:     /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/initial_results/trinity.Trinity.fasta.modified.fas
+# Option settings: hmmsearch --domtblout /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/hmmer_output/initial_run_results/68875at7898.out --cpu 1 /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/68875at7898.hmm /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/initial_results/trinity.Trinity.fasta.modified.fas 
+# Current dir:     /home/ericjuo/Projects/salmo_trutta_rna_seq
+# Date:            Fri Apr 29 12:54:01 2022
+# [ok]

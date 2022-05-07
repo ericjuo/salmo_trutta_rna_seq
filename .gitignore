@@ -1,11 +1,18 @@
 # Ignore SRA files downloaded from GEO
 *.sra
 
+# Ignore docker file
+.dockerignore
+Dockerfile
+
 # Ignore sequencing files
 *.fastq
 *.fastq.gz
 *.bam
 *.sam
+
+# Ignore BUSCO database
+busco_downloads/
 
 # Ignore credentials
 LICENSE
@@ -18,6 +25,9 @@ data/02_intermediate/*.txt
 
 # ignore data/03_processed
 data/03_processed/
+
+# Ignore install_singularity.sh
+install_singularity.sh
 
 # ignore doc/
 doc/*

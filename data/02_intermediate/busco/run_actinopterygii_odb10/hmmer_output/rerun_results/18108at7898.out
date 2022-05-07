@@ -1,0 +1,22 @@
+#                                                                                         --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                     accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#             ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+TRINITY_DN853_c2_g1_i1:469-3039   -            857 18108at7898          -            775  7.5e-293  972.3   2.3   1   1  1.1e-295  1.4e-292  971.4   2.3     3   775     9   857     7   857 0.90 -
+TRINITY_DN701_c2_g1_i1:2972-5557  -            862 18108at7898          -            775  3.1e-233  775.2   3.7   1   1  1.2e-235  1.6e-232  772.8   3.7     2   720     5   777     4   862 0.88 -
+TRINITY_DN701_c2_g1_i2:2891-5476  -            862 18108at7898          -            775  3.1e-233  775.2   3.7   1   1  1.2e-235  1.6e-232  772.8   3.7     2   720     5   777     4   862 0.88 -
+TRINITY_DN2200_c0_g1_i1:1465-3411 -            649 18108at7898          -            775  1.5e-106  356.3   6.3   1   2   2.3e-40     3e-37  127.0   3.2   205   400    71   272    67   289 0.90 -
+TRINITY_DN2200_c0_g1_i1:1465-3411 -            649 18108at7898          -            775  1.5e-106  356.3   6.3   2   2   1.6e-71   2.1e-68  230.1   0.0   442   722   290   582   275   592 0.92 -
+TRINITY_DN2200_c0_g1_i3:1465-3516 -            684 18108at7898          -            775  2.6e-106  355.4   7.6   1   2   5.4e-40   7.1e-37  125.8   4.6   205   400   106   307     7   317 0.91 -
+TRINITY_DN2200_c0_g1_i3:1465-3516 -            684 18108at7898          -            775  2.6e-106  355.4   7.6   2   2   1.9e-71   2.6e-68  229.8   0.0   442   722   325   617   311   624 0.92 -
+TRINITY_DN2200_c0_g2_i1:612-2621  -            670 18108at7898          -            775  6.9e-103  344.1   4.2   1   2   8.2e-43   1.1e-39  135.1   2.3   159   400    36   293     6   307 0.82 -
+TRINITY_DN2200_c0_g2_i1:612-2621  -            670 18108at7898          -            775  6.9e-103  344.1   4.2   2   2   3.8e-65     5e-62  209.0   0.0   440   720   309   601   297   607 0.90 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/18108at7898.hmm
+# Target file:     /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/rerun_results/trinity.Trinity.fasta.modified.fas
+# Option settings: hmmsearch --domtblout /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/hmmer_output/rerun_results/18108at7898.out --cpu 1 /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/18108at7898.hmm /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/rerun_results/trinity.Trinity.fasta.modified.fas 
+# Current dir:     /home/ericjuo/Projects/salmo_trutta_rna_seq
+# Date:            Fri Apr 29 13:04:22 2022
+# [ok]

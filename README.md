@@ -119,6 +119,29 @@ Link to brown trout genome statistic: [[Link](https://asia.ensembl.org/Salmo_tru
 89.91% overall alignment rate
 ```
 
-- Assembled transcripts were blasted against ensembl's brown trout cDNA database using blastn. The result showed that about 4,000 transcripts were reconstructed in full length, and about 12,800 transcripts have at least 50% coverage to brown trout cDNA.  
+- Assembled transcripts were blasted against ensembl's brown trout cDNA database using blastn. The result showed that about 4,000 transcripts were reconstructed to full length, and about 12,800 transcripts have at least 50% coverage to brown trout cDNA. However, comparing the number of annotated cDNA on ensembl (117,138), only about 10% of total cDNA were reconstructed to at least 50% length.  
 ![](report/trinitystats/full_len_brown_trout_cDNA.jpg)
 
+- BUSCO is a tool to assess completeness of assembly. The idea of BUSCO is analyzing how many highly conserved ortholog genes in the phyla the species belongs to can be found in the assembled transcriptome. Assembed transcriptome was analyzed using BUSCO. The result showed that 54.3% of highly conserved transcripts (25.3% single copy and 29.1% duplacated) were recontructed to full length but 36.4% of highly conserved transcripts were missing in the assembled transcriptome. 
+```
+# BUSCO version is: 5.3.2 
+# The lineage dataset is: actinopterygii_odb10 (Creation date: 2021-02-19, number of genomes: 26, number of BUSCOs: 3640)
+# Summarized benchmarking in BUSCO notation for file /home/ericjuo/Projects/salmo_trutta_rna_seq/data/03_processed/trinity/trinity.Trinity.fasta
+# BUSCO was run in mode: transcriptome
+
+	***** Results: *****
+
+	C:54.3%[S:25.2%,D:29.1%],F:9.3%,M:36.4%,n:3640	   
+	1974	Complete BUSCOs (C)			   
+	916	Complete and single-copy BUSCOs (S)	   
+	1058	Complete and duplicated BUSCOs (D)	   
+	337	Fragmented BUSCOs (F)			   
+	1329	Missing BUSCOs (M)			   
+	3640	Total BUSCO groups searched		   
+
+Dependencies and versions:
+	hmmsearch: 3.1
+	metaeuk: 5.34c21f2
+  ```
+
+  - The poor assembly quality might stem from lack of sequencing depth. The total sequence length of annotated cDNA on ensembl is about 328 million bp, whereas the sum of base pairs in raw reads from 8 samples is about 2000 million bp (250M * 8). The coverage of transcriptome is only 6X (2000M / 328M), greatly below the suggested 50X coverage for assembly experiment.  

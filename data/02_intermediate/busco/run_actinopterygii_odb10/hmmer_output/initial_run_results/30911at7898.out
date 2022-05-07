@@ -1,0 +1,22 @@
+#                                                                                         --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                     accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#             ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+TRINITY_DN1936_c0_g1_i2:281-2506  -            742 30911at7898          -            666         0 1248.4   0.5   1   1         0         0 1247.9   0.5     4   662    13   737    11   742 0.94 -
+TRINITY_DN1936_c0_g1_i3:94-1548   -            485 30911at7898          -            666  2.3e-248  825.5   0.1   1   1  2.2e-251  3.4e-248  824.9   0.1   234   662    12   480     3   485 0.93 -
+TRINITY_DN67663_c0_g1_i1:198-2360 -            721 30911at7898          -            666  9.1e-137  456.7   0.0   1   1  1.1e-139  1.7e-136  455.8   0.0    10   660    10   718     2   721 0.84 -
+TRINITY_DN2465_c2_g1_i1:581-2605  -            675 30911at7898          -            666   1.8e-54  184.7   0.0   1   1     1e-56   1.5e-53  181.7   0.0    46   661    73   673    62   675 0.79 -
+TRINITY_DN2465_c2_g1_i9:581-2605  -            675 30911at7898          -            666   1.8e-54  184.7   0.0   1   1     1e-56   1.5e-53  181.7   0.0    46   661    73   673    62   675 0.79 -
+TRINITY_DN30587_c0_g1_i1:375-2405 -            677 30911at7898          -            666   1.4e-49  168.6   0.3   1   1   2.2e-51   3.4e-48  164.0   0.3    37   640    60   646    47   676 0.79 -
+TRINITY_DN30587_c0_g1_i4:375-2195 -            607 30911at7898          -            666     1e-41  142.6   0.4   1   1   5.8e-44     9e-41  139.5   0.4    37   557    60   543    47   607 0.83 -
+TRINITY_DN7897_c0_g1_i3:208-1437  -            410 30911at7898          -            666   3.2e-35  121.1   0.0   1   1   2.5e-38   3.9e-35  120.9   0.0   272   628     1   366     1   407 0.81 -
+TRINITY_DN10722_c0_g2_i1:247-1116 -            290 30911at7898          -            666     0.092   10.6   1.6   1   1   9.5e-05      0.15    9.9   1.6    26   143   109   224    87   242 0.78 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/30911at7898.hmm
+# Target file:     /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/initial_results/trinity.Trinity.fasta.modified.fas
+# Option settings: hmmsearch --domtblout /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/hmmer_output/initial_run_results/30911at7898.out --cpu 1 /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/30911at7898.hmm /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/initial_results/trinity.Trinity.fasta.modified.fas 
+# Current dir:     /home/ericjuo/Projects/salmo_trutta_rna_seq
+# Date:            Fri Apr 29 12:53:44 2022
+# [ok]

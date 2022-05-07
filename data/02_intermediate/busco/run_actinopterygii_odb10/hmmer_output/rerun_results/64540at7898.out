@@ -1,0 +1,23 @@
+#                                                                                          --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                      accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#              ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+TRINITY_DN1992_c0_g1_i5:1651-2865  -            405 64540at7898          -            354  3.4e-191  633.7   0.1   1   1  6.3e-194    5e-191  633.2   0.1     1   353    20   402    20   403 0.94 -
+TRINITY_DN1992_c0_g1_i15:1510-2724 -            405 64540at7898          -            354  6.1e-191  632.9   0.1   1   1  1.1e-193  8.9e-191  632.3   0.1     1   353    20   402    20   403 0.94 -
+TRINITY_DN1992_c0_g1_i7:1620-2834  -            405 64540at7898          -            354  6.1e-191  632.9   0.1   1   1  1.1e-193  8.9e-191  632.3   0.1     1   353    20   402    20   403 0.94 -
+TRINITY_DN19328_c0_g1_i3:2993-4180 -            396 64540at7898          -            354  3.1e-180  597.7   0.1   1   1  5.4e-183  4.3e-180  597.2   0.1     1   351    14   396    14   396 0.94 -
+TRINITY_DN19328_c0_g1_i8:2984-4171 -            396 64540at7898          -            354  3.1e-180  597.7   0.1   1   1  5.4e-183  4.3e-180  597.2   0.1     1   351    14   396    14   396 0.94 -
+TRINITY_DN19373_c0_g1_i1:1-1005    -            335 64540at7898          -            354  1.5e-163  542.8   0.9   1   1  2.7e-166  2.2e-163  542.2   0.9    24   328     1   335     1   335 0.94 -
+TRINITY_DN17123_c0_g1_i1:0-749     -            250 64540at7898          -            354  3.4e-106  354.1   2.0   1   1    7e-109  5.5e-106  353.4   2.0    28   249     1   250     1   250 0.90 -
+TRINITY_DN17123_c0_g1_i2:0-822     -            240 64540at7898          -            354   1.1e-96  322.9   1.0   1   1   2.1e-99   1.6e-96  322.3   1.0    28   249     1   240     1   240 0.90 -
+TRINITY_DN19361_c1_g1_i2:468-1403  -            312 64540at7898          -            354   3.3e-35  120.6   1.2   1   1     1e-36   8.1e-34  116.0   1.2    31   310     3   309     1   312 0.80 -
+TRINITY_DN19361_c1_g1_i4:468-1403  -            312 64540at7898          -            354   3.3e-35  120.6   1.2   1   1     1e-36   8.1e-34  116.0   1.2    31   310     3   309     1   312 0.80 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/64540at7898.hmm
+# Target file:     /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/rerun_results/trinity.Trinity.fasta.modified.fas
+# Option settings: hmmsearch --domtblout /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/hmmer_output/rerun_results/64540at7898.out --cpu 1 /home/ericjuo/Projects/salmo_trutta_rna_seq/busco_downloads/lineages/actinopterygii_odb10/hmms/64540at7898.hmm /home/ericjuo/Projects/salmo_trutta_rna_seq/data/02_intermediate/busco/run_actinopterygii_odb10/metaeuk_output/rerun_results/trinity.Trinity.fasta.modified.fas 
+# Current dir:     /home/ericjuo/Projects/salmo_trutta_rna_seq
+# Date:            Fri Apr 29 13:04:28 2022
+# [ok]
