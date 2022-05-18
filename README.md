@@ -18,10 +18,8 @@ Steps to download the whole dataset: [[Link](notebooks/obtain_raw_reads_from_GEO
 - [x] Remove reads less than 35 bp  
 - [x] Remove foreign species contaminants
 - [x] De novo assemble using Trinity
-- [ ] Post assemble quality control 
-- [ ] Annotate transcripts using Blastn and Blastx and fish and mammalian nt and protein databases with a cut off e-value < 1E-15.  
-- [ ] Analyse gene expression using RSEM with `--no_polyA` parameter and default settings.  
-- [ ] Statistical analysis differential expression using edgeR with a cutoff FDR <0.1.  
+- [x] Post assemble quality control 
+- [x] Statistical analysis differential expression using edgeR with a cutoff FDR <0.05.  
 - [ ] Draw differential expressed genes using VennDiagram in R, Bioconductor.  
 
 ## Pipline
@@ -145,3 +143,11 @@ Dependencies and versions:
   ```
 
   - The poor assembly quality might stem from lack of sequencing depth. The total sequence length of annotated cDNA on ensembl is about 328 million bp, whereas the sum of base pairs in raw reads from 8 samples is about 2000 million bp (250M * 8). The coverage of transcriptome is only 6X (2000M / 328M), greatly below the suggested 50X coverage for assembly experiment.  
+
+  - Despite failure in reconstructing transcriptome in de novo way, performing differential expression analysis is still possible thanks to the publish of brown trout genome on ensembl.
+
+  - Differential expression analysis was performed using edger. Samples from metal-exposed group were compared to control group. The result shows that 4 genes were down-regulated and 1 gene was up-regulated in metal-exposed group comparing to control group (ignoring the difference in tissue type).  
+  ![](report/edger/DE_highlighted.jpg)  
+
+  - The up-regulated gene is 60S ribosomal protein L19-like gene (ENSSTUE00000313124), which binds to rRNA and constitutes ribosomes. Four down-regulated genes are polyubiquitin-C gene (ENSSTUE00000141781), ribosomal protein L8 (ENSSTUE00000151105), heat-shock cognate 70kDa protein-like (ENSSTUE00000209938), and protein RCC2 homolog (ENSSTUE00000514768). These genes may contribute to the capability of brown trout adapting to metal polluted river. The csv table can be obtained from [here](report/edger/DE_MetalvsControl.csv)
+  ![](report/edger/heatmap.jpg)

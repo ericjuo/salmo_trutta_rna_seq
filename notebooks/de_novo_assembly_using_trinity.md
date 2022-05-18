@@ -112,7 +112,7 @@ Dependencies and versions:
 ### Estimate abunance of each transcrpt
 BAM file is sorted before input to abundance estimation
 ```
-$ samtools sort -@ 10 ata/02_intermediate/bowtie2/aligned_reads.bam > ata/02_intermediate/bowtie2/aligned_reads_sorted.bam
+$ samtools sort -@ 10 ata/02_intermediate/bowtie2/aligned_reads.bam > data/02_intermediate/bowtie2/aligned_reads_sorted.bam
 ```
 
 concatenated pre_trinity paired end reads were used to esitmate abundance

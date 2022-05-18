@@ -1,0 +1,15 @@
+Status	data/02_intermediate/bam/SRR799769_pre_trinity.bam	data/02_intermediate/bam/SRR799770_pre_trinity.bam	data/02_intermediate/bam/SRR799771_pre_trinity.bam	data/02_intermediate/bam/SRR799772_pre_trinity.bam	data/02_intermediate/bam/SRR799773_pre_trinity.bam	data/02_intermediate/bam/SRR799774_pre_trinity.bam	data/02_intermediate/bam/SRR799775_pre_trinity.bam	data/02_intermediate/bam/SRR799776_pre_trinity.bam
+Assigned	933138	1054171	1120348	1132105	1073666	1088059	860760	1229773
+Unassigned_Unmapped	250009	239644	287891	177149	302254	275346	334257	278397
+Unassigned_Read_Type	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	741643	1022996	893504	1020826	927385	1183295	916490	1320833
+Unassigned_Secondary	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	687361	612310	887500	519641	832822	671974	839977	542422
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	437080	522935	533809	924922	516868	555679	409636	758927

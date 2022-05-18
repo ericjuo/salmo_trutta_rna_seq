@@ -1,3 +1,6 @@
+# Ignore .vscode/ folder
+.vscode/
+
 # Ignore SRA files downloaded from GEO
 *.sra
 
